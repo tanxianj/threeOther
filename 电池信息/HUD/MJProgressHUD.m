@@ -7,7 +7,7 @@
 //
 
 #import "MJProgressHUD.h"
-#import "Public.h"
+
 
 @interface MJProgressHUD ()<UIGestureRecognizerDelegate>
 

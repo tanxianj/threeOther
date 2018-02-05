@@ -6,8 +6,8 @@
 //  Copyright © 2018年 MAc. All rights reserved.
 //
 
-#import "View_tool_test_ViewController.h"
 
-@interface View_tool_ViewController : View_tool_test_ViewController
+
+@interface View_tool_ViewController : Super_ViewController
 
 @end

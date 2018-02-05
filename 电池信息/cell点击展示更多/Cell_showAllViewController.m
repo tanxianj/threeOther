@@ -43,6 +43,7 @@
     cell.open =Close[indexPath.row];
    
     [self Get_NSstring:cell.lab_lab.text FoneSize:16.0];
+    
     return cell;
 }
 -(NSInteger)Get_NSstring:(NSString *)str FoneSize:(CGFloat)size{

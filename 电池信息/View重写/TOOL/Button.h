@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^ButtonBlock)(void);
-
-@interface UIButton : UIButton
-
-@property (nonatomic, copy) ButtonBlock buttonBlock;
-
+typedef void(^ButtnBlock) (void);
+@interface Button : UIButton
+@property(nonatomic,copy) ButtnBlock buttonblock;
 @end

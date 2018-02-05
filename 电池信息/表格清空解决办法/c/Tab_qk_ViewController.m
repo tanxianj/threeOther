@@ -23,6 +23,7 @@
     // Do any additional setup after loading the view.
     
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 20;
 }

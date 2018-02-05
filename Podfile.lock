@@ -1,0 +1,70 @@
+PODS:
+  - AFNetwork (0.1.0):
+    - AFNetworking (~> 3.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FDFullscreenPopGesture (1.1)
+  - FLEX (2.4.0)
+  - JPFPSStatus (0.1.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - MBProgressHUD+JDragon (0.0.3):
+    - MBProgressHUD (~> 0.9.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - MLTransition (2.1.3)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - TXJAllTools (0.1.23)
+  - TZImagePickerController (1.9.8)
+
+DEPENDENCIES:
+  - AFNetwork (~> 0.1.0)
+  - FDFullscreenPopGesture
+  - FLEX (~> 2.4.0)
+  - JPFPSStatus (~> 0.1.1)
+  - Masonry
+  - MBProgressHUD+JDragon (~> 0.0.3)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
+  - MLTransition (~> 2.1.3)
+  - SDCycleScrollView (~> 1.73)
+  - TXJAllTools
+  - TZImagePickerController (~> 1.9.3)
+
+SPEC CHECKSUMS:
+  AFNetwork: 0dbdb2ffb4a7770b3d1802dc85b50ab31263f2c2
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MBProgressHUD+JDragon: 74b18a89dac13cc921df0e2b0c2945b29b15e7ab
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MLTransition: 8ebe393aedfb61507202085a5bb16c7b17363e43
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  TXJAllTools: af441c94b2a9e1db5b135a533ddbb59546e01e53
+  TZImagePickerController: 3b9413ae5d049b1fdc5b0c720ad283f35b679a50
+
+PODFILE CHECKSUM: 36e4772526ae74fed04b5ee81dc919e79af72e02
+
+COCOAPODS: 1.3.1

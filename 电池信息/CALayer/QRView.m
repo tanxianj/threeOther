@@ -39,9 +39,9 @@
 
 - (void)initQRLine {
     qrLine  = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width / 2 - self.transparentArea.width / 2,
-                                                            self.bounds.size.height / 2 - self.transparentArea.height / 2,
+                                                            (self.bounds.size.height-64) / 2 - self.transparentArea.height / 2,
                                                             self.transparentArea.width, 2)];
-    qrLine.image = [UIImage imageNamed:@"qr_scan_line"];
+    qrLine.image = [UIImage imageNamed:@"scan_line"];
     qrLine.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:qrLine];
     qrLineY = qrLine.frame.origin.y;
@@ -60,7 +60,7 @@
         CGFloat maxBorder = self.frame.size.height / 2 + self.transparentArea.height / 2 - 4;
         if (qrLineY > maxBorder) {
             
-            qrLineY = self.frame.size.height / 2 - self.transparentArea.height /2;
+            qrLineY = self.frame.size.height  / 2 - self.transparentArea.height /2;
         }
         qrLineY++;
     }];
@@ -70,12 +70,20 @@
     
     //整个二维码扫描界面的颜色
     CGSize screenSize =[UIScreen mainScreen].bounds.size;
+    /*
+    UIImageView *lefttop = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"scan_corner1"]];
+    [self addSubview:lefttop];
+    [lefttop mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(self);
+    }];
+     */
     CGRect screenDrawRect =CGRectMake(0, 0, screenSize.width,screenSize.height);
     
     //中间清空的矩形框
     CGRect clearDrawRect = CGRectMake(screenDrawRect.size.width / 2 - self.transparentArea.width / 2,
-                                      screenDrawRect.size.height / 2 - self.transparentArea.height / 2,
+                                      (screenDrawRect.size.height-64) / 2 - self.transparentArea.height / 2,
                                       self.transparentArea.width,self.transparentArea.height);
+    
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     [self addScreenFillRect:ctx rect:screenDrawRect];
@@ -91,7 +99,7 @@
 
 - (void)addScreenFillRect:(CGContextRef)ctx rect:(CGRect)rect {
     
-    CGContextSetRGBFillColor(ctx, 40 / 255.0,40 / 255.0,40 / 255.0,0.7);
+    CGContextSetRGBFillColor(ctx, 0 / 255.0,0 / 255.0,0 / 255.0,0);
     CGContextFillRect(ctx, rect);   //draw the transparent layer
 }
 
@@ -101,12 +109,34 @@
 }
 
 - (void)addWhiteRect:(CGContextRef)ctx rect:(CGRect)rect {
-    
-    CGContextStrokeRect(ctx, rect);
-    CGContextSetRGBStrokeColor(ctx, 221/255.f, 186/255.f, 118/255.f, 1);
-    CGContextSetLineWidth(ctx, 2);
-    CGContextAddRect(ctx, rect);
-    CGContextStrokePath(ctx);
+   
+    UIImageView *lefttop = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"scan_corner1"]];
+    [self addSubview:lefttop];
+    [lefttop mas_makeConstraints:^(MASConstraintMaker *make) {
+
+        make.left.offset(self.bounds.size.width/2- rect.size.width/2);
+        make.top.offset(self.bounds.size.height/2- rect.size.height/2);
+    }];
+    UIImageView *leftbottom = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"scan_corner3"]];
+    [self addSubview:leftbottom];
+    [leftbottom mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(self.bounds.size.width/2- rect.size.width/2);
+        make.bottom.offset(-self.bounds.size.height/2+ rect.size.height/2);
+    }];
+    UIImageView *righttop = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"scan_corner2"]];
+    [self addSubview:righttop];
+    [righttop mas_makeConstraints:^(MASConstraintMaker *make) {
+
+        make.right.offset(-self.bounds.size.width/2+ rect.size.width/2);
+        make.top.offset(self.bounds.size.height/2- rect.size.height/2);
+    }];
+    UIImageView *rightbottom = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"scan_corner4"]];
+    [self addSubview:rightbottom];
+    [rightbottom mas_makeConstraints:^(MASConstraintMaker *make) {
+
+        make.right.offset(-self.bounds.size.width/2+ rect.size.width/2);
+        make.bottom.offset(-self.bounds.size.height/2+ rect.size.height/2);
+    }];
 }
 
 - (void)addCornerLineWithContext:(CGContextRef)ctx rect:(CGRect)rect{

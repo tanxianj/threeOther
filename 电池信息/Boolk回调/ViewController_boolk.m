@@ -19,6 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+-(void)SetNavOther{
+    self.title = @"Block回调";
+    [self AddBackBtn];
+}
 - (IBAction)boolk_btn:(id)sender {
     [self boolk];
     [self.navigationController popViewControllerAnimated:YES];

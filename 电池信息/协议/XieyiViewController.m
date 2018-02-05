@@ -7,8 +7,9 @@
 //
 
 #import "XieyiViewController.h"
-
-@interface XieyiViewController ()
+#import "Xieyi2ViewController.h"
+@interface XieyiViewController ()<Xieyi2ViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *lab_lab;
 
 @end
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+
+}
+- (IBAction)GotoXyyi2:(id)sender {
+    Xieyi2ViewController *xieyi = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"xiyi2"];
+    xieyi.delegate = self;
+    [self.navigationController pushViewController:xieyi animated:YES];
+}
+//协议传值（逆传）
+#pragma mark -XieYiTwoDelegate
+-(void)ChangeViewController:(Xieyi2ViewController *)viewController changeText:(NSString *)text
+{
+    self.lab_lab.text = text;
 }
 
 - (void)didReceiveMemoryWarning {

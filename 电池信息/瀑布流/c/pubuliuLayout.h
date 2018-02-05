@@ -10,5 +10,6 @@
 typedef  CGFloat(^itemHeightBlock)(NSIndexPath* index);
 @interface pubuliuLayout : UICollectionViewLayout
 @property(nonatomic,strong )itemHeightBlock heightBlock ;
+@property(nonatomic,assign)NSUInteger colMargin;
 -(instancetype)initWithItemsHeightBlock:(itemHeightBlock)block;
 @end

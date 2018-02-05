@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewController_boolk.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : Super_ViewController
 
 
 @end

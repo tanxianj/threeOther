@@ -13,25 +13,38 @@
 @end
 
 @implementation Super_ViewController
-
+//在页面出现的时候就将黑线隐藏起来
+-(void)viewWillAppear:(BOOL)animated
+{
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.topLine = [UIView new];
-    self.topLine.backgroundColor = [UIColor redColor];
-    [self.navigationController.navigationBar setTranslucent:NO];
-    [self.view addSubview:_topLine];
-    [self.topLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.equalTo(self.view);
-        make.height.offset(1);
-    }];
-    
+   
     [self SetNavOther];
+    [self addView];
+    [self initconstraint];
+    
     [self.navigationController setNavigationBarHidden:[self HiddenNavView] animated:YES];
+    
 }
-
+-(void)ShowTopLine{
+    self.topLine = [UIView new];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.topLine.backgroundColor = [UIColor greenColor];
+    [self.navigationController.navigationBar setTranslucent:NO];
+    [self.navigationController.navigationBar addSubview:_topLine];
+    [self.topLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.navigationController.navigationBar);
+        make.height.offset(1);
+        make.top.equalTo(self.navigationController.navigationBar.mas_bottom).offset(-1);
+    }];
+//    self.topLine.hidden = YES;
+}
 -(void)SetNavOther{
     
 }
@@ -69,7 +82,7 @@
         button.titleLabel.font = [UIFont systemFontOfSize:15];
         [button setTitleColor:titleColor
                      forState:UIControlStateNormal];
-        if (Nav_Right_Item) {
+        if (leftOrRight == Nav_Right_Item) {
             //            button.frame = CGRectMake(0, 0, 60, 44);
             button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
             if (@available(iOS 11.0, *)){
@@ -91,7 +104,7 @@
     if (imageName && [imageName isKindOfClass:[NSString class]]) {
         [button setImage:[UIImage imageNamed:imageName]
                 forState:UIControlStateNormal];
-        if (leftOrRight) {
+        if (leftOrRight == Nav_Right_Item) {
             button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
             if (@available(iOS 11.0, *)){
                 button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10);
@@ -102,7 +115,7 @@
         else {
             button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
             if (@available(iOS 11.0, *)){
-                button.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+                button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
             }else{
                 button.contentEdgeInsets = UIEdgeInsetsMake(0, -4, 0, 0);
             }
@@ -132,4 +145,10 @@
 }
 
 
+-(void)initconstraint{
+    
+}
+-(void)addView{
+    
+}
 @end

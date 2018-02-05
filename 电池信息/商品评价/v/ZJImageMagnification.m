@@ -1,13 +1,162 @@
 //
 //  ZJImageMagnification.m
-//  第三方相关
 //
-//  Created by bang on 2018/1/25.
-//  Copyright © 2018年 MAc. All rights reserved.
-//
+//  Created by degulade on 2017/4/21.
+//  Copyright © 2017年 degulade. All rights reserved.
+/*图片放大*/
 
 #import "ZJImageMagnification.h"
-
+#define  Width [UIScreen mainScreen].bounds.size.width
+#define  Height [UIScreen mainScreen].bounds.size.height
+@interface ZJImageMagnification()
+//@property (nonatomic ,assign)NSInteger topheight;
+@end
 @implementation ZJImageMagnification
+//原始尺寸
+static CGRect oldframe;
+static UIScrollView *scrolView;
+/**
+ *  浏览大图
+ *
+ *  @param currentImageview 当前图片
+ *  @param alpha            背景透明度
+ */
++(void)scanBigImageWithImageView:(UIImageView *)currentImageview alpha:(CGFloat)alpha {
+    
+    //  当前imageview的图片
+    UIImage *image = currentImageview.image;
+    //  当前视图
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    //  背景
+    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Width, Height)];
+    //  当前imageview的原始尺寸->将像素currentImageview.bounds由currentImageview.bounds所在视图转换到目标视图window中，返回在目标视图window中的像素值
+    oldframe = [currentImageview convertRect:currentImageview.bounds toView:window];
+    [backgroundView setBackgroundColor:[UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:alpha]];
+    
+    //  此时视图不会显示
+    [backgroundView setAlpha:0];
+    //  将所展示的imageView重新绘制在Window中
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:oldframe];
+    [imageView setImage:image];
+    imageView.contentMode =UIViewContentModeScaleAspectFit;
+    [imageView setTag:1024];
+    [backgroundView addSubview:imageView];
+    //  将原始视图添加到背景视图中
+    [window addSubview:backgroundView];
+    
+    
+    //  添加点击事件同样是类方法 -> 作用是再次点击回到初始大小
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideImageView:)];
+    [backgroundView addGestureRecognizer:tapGestureRecognizer];
+    
+    //  动画放大所展示的ImageView
+    [UIView animateWithDuration:0.4 animations:^{
+        CGFloat y,width,height;
+        y = (Height - image.size.height * Width / image.size.width) * 0.5;
+        //宽度为屏幕宽度
+        width = Width;
+        //高度 根据图片宽高比设置
+        height = image.size.height * Width / image.size.width;
+        [imageView setFrame:CGRectMake(0, y, width, height)];
+        //重要！ 将视图显示出来
+        [backgroundView setAlpha:1];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
++(void)scanBigImageWithImageViewArray:(NSArray *)imgArray indexImage:(NSInteger )integer alpha:(CGFloat)alpha{
+    
+    //  当前视图
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UIView *bgView = [UIView new];
+    bgView.frame = window.bounds;
+    [window addSubview:bgView];
+    //  将原始视图添加到背景视图中
+    scrolView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, Width, Height)];
+    scrolView.contentSize = CGSizeMake(imgArray.count*Width, Height);
+    scrolView.showsVerticalScrollIndicator = NO;
+    scrolView.showsHorizontalScrollIndicator = NO;
+    scrolView.pagingEnabled = YES;
+    
+    [scrolView setBackgroundColor:[UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:alpha]];
+    [scrolView setAlpha:0];
+    
+    [bgView addSubview:scrolView];
+    
+    UILabel *numberlab = [UILabel LableInitWith:@"1/5" LabFontSize:14.0 textColor:[UIColor whiteColor] textAlignment:NSTextAlignmentCenter];
+    numberlab.frame = CGRectMake(0, 0, Width, 40);
+    [bgView addSubview:numberlab];
+    for (int i = 0; i< imgArray.count; i++) {
+        
+        NSString *str = [NSString stringWithFormat:@"%@",imgArray[i]];
+        
+        UIImageView * currentImageview = [[UIImageView alloc]initWithImage:[UIImage imageNamed:str]];
+        //  当前imageview的图片
+        UIImage *image = currentImageview.image;
+        oldframe = [currentImageview convertRect:currentImageview.bounds toView:window];
+        
+        //  将所展示的imageView重新绘制在backgroundView中
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        imageView.frame = CGRectMake(i*Width, oldframe.origin.y, oldframe.size.width, oldframe.size.height);
+        imageView.contentMode =UIViewContentModeScaleAspectFit;
+//        [imageView setTag:1024];
+        [scrolView addSubview:imageView];
+        
+        //  添加点击事件同样是类方法 -> 作用是再次点击回到初始大小
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideImageView:)];
+        [bgView addGestureRecognizer:tapGestureRecognizer];
+        
+        //  动画放大所展示的ImageView
+        [UIView animateWithDuration:0.4 animations:^{
+            
+            CGFloat y,width,height;
+            y = (Height - image.size.height * Width / image.size.width) * 0.5;
+            //宽度为屏幕宽度
+            width = Width;
+            //高度 根据图片宽高比设置
+            height = image.size.height * Width / image.size.width;
+            [imageView setFrame:CGRectMake(i*width, y, width, height)];
+            //重要！ 将视图显示出来
+            [scrolView setAlpha:1];
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+    scrolView.contentOffset = CGPointMake(integer*Width, 0);
+    
+//    XJLog(@"integer*Width is %f ",integer*Width);
+    
+}
+
+// 完成拖拽(滚动停止时调用此方法，手指离开屏幕前)
+
+
+
+-(void)scrollViewDidScroll:(UIScrollView*)scrollView{
+    XJLog(@"%f",scrollView.contentOffset.x);
+    
+}
+/**
+ *  恢复imageView原始尺寸
+ *
+ *  @param tap 点击事件
+ */
++(void)hideImageView:(UITapGestureRecognizer *)tap{
+    
+    UIView *backgroundView = tap.view;
+    //  原始imageview
+    UIImageView *imageView = [tap.view viewWithTag:1024];
+    //  恢复
+    [UIView animateWithDuration:0.4 animations:^{
+        [imageView setFrame:oldframe];
+        [backgroundView setAlpha:0];
+    } completion:^(BOOL finished) {
+        //完成后操作->将背景视图删掉
+        [backgroundView removeFromSuperview];
+    }];
+}
 
 @end
+

@@ -6,9 +6,9 @@
 //  Copyright © 2018年 MAc. All rights reserved.
 //
 
-#import "UIButton.h"
+#import "Button.h"
 
-@implementation UIButton
+@implementation Button
 
 /*
 // Only override drawRect: if you perform custom drawing.

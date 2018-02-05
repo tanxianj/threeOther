@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface EvaluationListTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *title_lab;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
+

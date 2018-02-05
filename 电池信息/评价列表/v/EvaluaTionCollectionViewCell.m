@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.imgView.contentMode = UIViewContentModeScaleAspectFill;
+    self.imgView.layer.masksToBounds = YES;
 }
 
 @end

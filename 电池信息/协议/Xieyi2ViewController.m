@@ -9,6 +9,7 @@
 #import "Xieyi2ViewController.h"
 
 @interface Xieyi2ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *telePhonefield;
 
 @end
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)BtnClick:(id)sender {
+//    if ([self.delegate respondsToSelector:@selector(ChangeViewController:changeText:)]) {
+        
+        [self.delegate ChangeViewController:self changeText:self.telePhonefield.text];
+        
+//    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -17,8 +17,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self Setwg];
+    
 }
-
+-(void)SetNavOther{
+    self.title = @"网格";
+    [self AddBackBtn];
+    self.topLine.hidden = YES;
+}
+/**/
+-(void)Setwg{
+    for (int i = 0; i<__kWidth; i+=5) {
+        UIView *view = [UIView new];
+        view.backgroundColor = [UIColor redColor];
+        [self.view addSubview:view];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.offset(i);
+            make.top.bottom.equalTo(self.view);
+            make.width.offset(1);
+        }];
+    }
+    for (int i = 0; i<__kHeight; i+=5) {
+        UIView *view = [UIView new];
+        view.backgroundColor = [UIColor redColor];
+        [self.view addSubview:view];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.offset(i);
+            make.left.right.equalTo(self.view);
+            make.height.offset(1);
+        }];
+    }
+}
+ 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Button.h"
+#import "Initialization.h"
 typedef NS_ENUM(NSUInteger,LeftOrRihgt) {
     Nav_Left_Item,
     Nav_Right_Item
 };
-@interface Super_ViewController : UIViewController<UIInteraction>
+@interface Super_ViewController : UIViewController<Initialization>
 
 @property(nonatomic,strong)UIView *topLine;
 

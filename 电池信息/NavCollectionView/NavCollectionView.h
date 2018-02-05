@@ -8,6 +8,12 @@
 
 #import "Super_ViewController.h"
 
-@interface UICollectionViewController : Super_ViewController
+@interface NavCollectionView : Super_ViewController
+
+@end
+@interface VoucherCenterCell : UICollectionViewCell
+
+/**  */
+@property (nonatomic, strong) UILabel *textLabel;
 
 @end

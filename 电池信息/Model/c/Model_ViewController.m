@@ -8,6 +8,7 @@
 
 #import "Model_ViewController.h"
 #define HTTP @"http://www.le173.com/v2/goods/list"
+#import "HTTPSessionManager.h"
 @interface Model_ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tab_view;
 @property (nonatomic,strong)NSMutableArray *arry;
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"Model";
+    
     [self Get_Data];
     _tab_view.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [_tab_view reloadData];
@@ -40,12 +41,19 @@
     
 }
 -(void)Get_Data{
+    //菊花加载
+    [HTTPSessionManager getWithURLString:HTTP parameters:@{@"mem_id":@"20"} success:^(NSDictionary *data) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
     [[AFNetwork shareManager] GET:HTTP parameters:@{@"mem_id":@"2"}  progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"responseObject is %@",responseObject);
+        
         _arry = [XJModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"][@"list"]];
         [self.tab_view reloadData];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];

@@ -6,14 +6,14 @@
 //  Copyright © 2018年 XiaoHuiBang. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewController2.h"
 
-@interface ViewController ()
+@interface ViewController2 ()
 @property (weak, nonatomic) IBOutlet UITableView *tabview;
 
 @end
 
-@implementation ViewController
+@implementation ViewController2
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,7 +24,7 @@
     return 10;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    TableViewCell *cell= [TableViewCell Setcell];
+    TableViewCellfwb *cell= [TableViewCellfwb Setcell];
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"第%li行这是个富文本测试这是个富文本测试这是个富文本测试这是个富文本测试\n",indexPath.row]];
     // 创建图片图片附件
     NSTextAttachment *attach = [[NSTextAttachment alloc] init];

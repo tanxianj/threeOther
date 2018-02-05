@@ -9,5 +9,12 @@
 #import "Lookimage.h"
 
 @implementation Lookimage
-
++(instancetype)ShareLookImg{
+    static Lookimage *lookimg = nil;
+    static dispatch_once_t OneToken;
+    dispatch_once(&OneToken, ^{
+        lookimg = [[Lookimage alloc]init];
+    });
+    return lookimg;
+}
 @end

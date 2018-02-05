@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-static NSTimeInterval kQrLineanimateDuration = 0.02;
+static NSTimeInterval kQrLineanimateDuration = 0.01;
 
 @interface QRView : UIView
 

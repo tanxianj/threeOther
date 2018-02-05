@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoHuiBang. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "TableViewCellfwb.h"
 
-@implementation TableViewCell
+@implementation TableViewCellfwb
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -26,9 +26,10 @@
     
    
     _xinxin.attributedText = string;
+    
 }
-+(TableViewCell *)Setcell{
-    return [[[NSBundle mainBundle] loadNibNamed:@"TableViewCell" owner:nil options:nil] lastObject];
++(TableViewCellfwb *)Setcell{
+    return [[[NSBundle mainBundle] loadNibNamed:@"TableViewCellfwb" owner:nil options:nil] lastObject];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

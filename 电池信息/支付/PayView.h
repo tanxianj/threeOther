@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PayView : UIView
-
+-(void)ShowPlayView;
+-(void)HiddenPlayView;
 @end

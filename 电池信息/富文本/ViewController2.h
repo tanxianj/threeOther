@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TableViewCell.h"
-@interface ViewController : UIViewController
+#import "TableViewCellfwb.h"
+@interface ViewController2 : UIViewController
 
 
 @end

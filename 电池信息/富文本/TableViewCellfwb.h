@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewCell : UITableViewCell
+@interface TableViewCellfwb : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lab_lab;
 @property (weak, nonatomic) IBOutlet UILabel *lab_2_lab;
 @property (weak, nonatomic) IBOutlet UILabel *xinxin;
-+(TableViewCell *)Setcell;
++(TableViewCellfwb *)Setcell;
 @end

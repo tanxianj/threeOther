@@ -7,8 +7,8 @@
 //
 
 #import "pubuliuLayout.h"
-#define colMargin 5
-#define colCount 4
+
+#define colCount 3
 #define rolMargin 5
 @interface pubuliuLayout()
 //数组存放每列的总高度
@@ -20,13 +20,14 @@
 -(instancetype)initWithItemsHeightBlock:(itemHeightBlock)block{
     if ([super init]) {
         self.heightBlock = block;
+        _colMargin = _colMargin ? _colMargin : 5;
     }
     return self;
 }
 //完成布局前的初始工作
 -(void)prepareLayout{
     [super prepareLayout];
-     self.colWidth =( self.collectionView.frame.size.width - (colCount+1)*colMargin )/colCount;
+     self.colWidth =( self.collectionView.frame.size.width - (colCount+1)*_colMargin )/colCount;
     self.colsHeight = nil;
 }
 //collectionView的内容尺寸
@@ -53,8 +54,8 @@
             shortCol=i;
         }
     }
-    CGFloat x = (shortCol+1)*colMargin+ shortCol * self.colWidth;
-    CGFloat y = shortest.floatValue+colMargin;
+    CGFloat x = (shortCol+1)*_colMargin+ shortCol * self.colWidth;
+    CGFloat y = shortest.floatValue+_colMargin;
     
     //获取cell高度
     CGFloat height=0;
@@ -63,7 +64,7 @@
         height = self.heightBlock(indexPath);
     }
     attr.frame= CGRectMake(x, y, self.colWidth, height);
-    self.colsHeight[shortCol]=@(shortest.floatValue+colMargin+height);
+    self.colsHeight[shortCol]=@(shortest.floatValue+_colMargin+height);
     
     return attr;
 }

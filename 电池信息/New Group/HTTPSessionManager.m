@@ -33,7 +33,7 @@
         if (successBlock) {
             
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
-            
+            XJLog(@"%@ %@ is %@",urlString,parameters,dic);
             successBlock(dic);
             
         }
@@ -57,7 +57,7 @@
         if (successBlock) {
             
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
-            
+            XJLog(@"%@ %@ is %@",urlString,parameters,dic);
             successBlock(dic);
             
         }

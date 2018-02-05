@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebLoadingViewController : UIViewController
-
+@interface WebLoadingViewController : Super_ViewController
+@property(nonatomic,strong)NSString *url;
 @end

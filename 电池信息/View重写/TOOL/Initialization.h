@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @protocol Initialization <NSObject>
+@required
 
+
+@optional
+-(void)initconstraint;
+-(void)addView;
 @end

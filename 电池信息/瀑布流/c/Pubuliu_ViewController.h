@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Pubuliu_ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionview;
 
 @end

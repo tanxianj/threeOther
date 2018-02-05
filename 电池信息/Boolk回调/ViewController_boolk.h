@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController_boolk : UIViewController
+@interface ViewController_boolk : Super_ViewController
 @property(nonatomic,strong)void (^Get_lab) (NSString *str);
 @end

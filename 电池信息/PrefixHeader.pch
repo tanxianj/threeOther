@@ -11,6 +11,17 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// 自定义log输出，debug时，正常NSLog输出，release状态，为空，不打印
+#ifdef DEBUG // 调试时
+
+#define XJLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布时
+
+#define XJLog(...)
+
+#endif
+
 /*第三方框架*/
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetwork.h>
@@ -18,6 +29,17 @@
 #import <MJRefresh/MJRefresh.h>
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import <MLTransition/MLTransition.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <Masonry/Masonry.h>
+#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
+#import <TZImagePickerController/TZImagePickerController.h>
+//谭胖子自己的框架
+#import <TXJAllTools/AllTools.h>
+
+//#import <YJProgressHUD/YJProgressHUD.h>
+#import <MBProgressHUD+JDragon.h>
+/*自定义的HUD*/
+#import "MJProgressHUD.h"
 /*自定义页面*/
 #import "XJModel.h"
 #import "Model_TableViewCell.h"
@@ -32,4 +54,19 @@
 #import "Cell_zdViewController.h"
 #import "Cell_showAllViewController.h"
 #import "cell_showAllTableViewCell.h"
+#import "YJProgressHUD_ViewController.h"
+#import "FirstViewController.h"
+#import "Pubuliu_ViewController.h"
+#import "Pubuliu_CollectionViewCell.h"
+#import "pubuliuLayout.h"
+#import "ViewController2.h"
+#import <JPFPSStatus/JPFPSStatus.h>
+#import "ZPScreenAdaptation.h"
+//TOOl
+#import "Super_ViewController.h"
+#import "CALayerViewController.h"
+#define Kcolor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+//resource path
+#define __kWidth [UIScreen mainScreen].bounds.size.width
+#define __kHeight [UIScreen mainScreen].bounds.size.height
 #endif /* PrefixHeader_pch */

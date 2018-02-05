@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (APPcolor)
-
++(UIColor *)AppGrayColor;
++ (UIColor *)appBlackSubColor;
++ (UIColor *)appBlackColor;
++ (UIColor *)appLineColor;
 @end

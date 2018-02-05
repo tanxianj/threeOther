@@ -14,11 +14,23 @@
 
 @implementation View_tool_ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    self.topSeparatorLine.hidden = YES;
+//    self.view.backgroundColor = [UIColor blackColor];
 }
 
+-(void)SetNavOther{
+    self.title = @"测试";
+    [self AddBackBtn];
+    
+    self.navigationItem.rightBarButtonItem = [self setupNavigationItemWithLeft:YES imageName:nil title:@"记录" callBack:^{
+        XJLog(@"点击记录");
+        
+    }];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

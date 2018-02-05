@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Lookimage : NSObject
-
++(instancetype)ShareLookImg;
 @end

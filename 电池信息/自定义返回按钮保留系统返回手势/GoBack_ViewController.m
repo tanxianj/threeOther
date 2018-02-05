@@ -17,15 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
-//    [button setTitle:@"返回" forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
-//    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
-
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 30, 30);
+    [btn setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
+    btn.imageEdgeInsets =UIEdgeInsetsMake(0, 0, 0, 0);
+    
+//    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    
 }
+
 - (void)back:(UIButton *)button {
     [self.navigationController popViewControllerAnimated:YES];
 }

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface GETback : NSObject
-
+@property(nonatomic,assign)NSInteger code;
+@property(nonatomic,strong)NSString *data;
 @end
