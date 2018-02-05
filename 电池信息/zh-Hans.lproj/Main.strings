@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0uC-zg-rzI"; */
+"0uC-zg-rzI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "自定义文字"; ObjectID = "1x4-WX-PIN"; */
+"1x4-WX-PIN.normalTitle" = "自定义文字";
+
+/* Class = "UIViewController"; title = "协议页面二"; ObjectID = "45O-eO-a6f"; */
+"45O-eO-a6f.title" = "协议页面二";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7li-7T-1Sv"; */
+"7li-7T-1Sv.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Goto页面二"; ObjectID = "Bml-U0-Kzk"; */
+"Bml-U0-Kzk.normalTitle" = "Goto页面二";
+
+/* Class = "UIButton"; normalTitle = "停止"; ObjectID = "CO4-zN-MO6"; */
+"CO4-zN-MO6.normalTitle" = "停止";
+
+/* Class = "UITextField"; placeholder = "请输入回调内容"; ObjectID = "Ce7-wL-C5I"; */
+"Ce7-wL-C5I.placeholder" = "请输入回调内容";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DX0-cR-Cxn"; */
+"DX0-cR-Cxn.text" = "Label";
+
+/* Class = "UIViewController"; title = "富文本"; ObjectID = "Fuq-kn-ShN"; */
+"Fuq-kn-ShN.title" = "富文本";
+
+/* Class = "UIViewController"; title = "协议页面一"; ObjectID = "HqU-2O-qik"; */
+"HqU-2O-qik.title" = "协议页面一";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KNM-sZ-vHw"; */
+"KNM-sZ-vHw.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eUE-TH-aH0"; */
+"eUE-TH-aH0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "age"; ObjectID = "gOm-lC-1Q2"; */
+"gOm-lC-1Q2.text" = "age";
+
+/* Class = "UIButton"; normalTitle = "返回一面一"; ObjectID = "kLp-oS-9HC"; */
+"kLp-oS-9HC.normalTitle" = "返回一面一";
+
+/* Class = "UIButton"; normalTitle = "开始"; ObjectID = "mmV-vp-hvd"; */
+"mmV-vp-hvd.normalTitle" = "开始";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rQT-MJ-q0q"; */
+"rQT-MJ-q0q.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "回调"; ObjectID = "rQy-2g-TOj"; */
+"rQy-2g-TOj.normalTitle" = "回调";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "sBK-Hh-gjf"; */
+"sBK-Hh-gjf.text" = "name";
+
+/* Class = "UIButton"; normalTitle = "跳转传值"; ObjectID = "weZ-YE-dXi"; */
+"weZ-YE-dXi.normalTitle" = "跳转传值";
+
+/* Class = "UIViewController"; title = "保留返回手势"; ObjectID = "xrW-by-S13"; */
+"xrW-by-S13.title" = "保留返回手势";

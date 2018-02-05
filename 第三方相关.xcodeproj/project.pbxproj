@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046762391FCD461200FEA6B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046762381FCD461200FEA6B5 /* AppDelegate.m */; };
+		0467623C1FCD461200FEA6B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467623B1FCD461200FEA6B5 /* ViewController.m */; };
+		0467623F1FCD461200FEA6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0467623D1FCD461200FEA6B5 /* Main.storyboard */; };
+		046762411FCD461200FEA6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046762401FCD461200FEA6B5 /* Assets.xcassets */; };
+		046762441FCD461200FEA6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046762421FCD461200FEA6B5 /* LaunchScreen.storyboard */; };
+		046762471FCD461200FEA6B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046762461FCD461200FEA6B5 /* main.m */; };
+		046762511FCD461300FEA6B5 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046762501FCD461300FEA6B5 /* ____Tests.m */; };
+		0467625C1FCD461300FEA6B5 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467625B1FCD461300FEA6B5 /* ____UITests.m */; };
+		04A5C5B81FD0EAE300CDF939 /* ViewController_boolk.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5B71FD0EAE300CDF939 /* ViewController_boolk.m */; };
+		04A5C5BB1FD0FA1600CDF939 /* Model_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5BA1FD0FA1600CDF939 /* Model_ViewController.m */; };
+		04A5C5C31FD0FE5100CDF939 /* Model_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5C11FD0FE5100CDF939 /* Model_TableViewCell.m */; };
+		04A5C5C41FD0FE5100CDF939 /* Model_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A5C5C21FD0FE5100CDF939 /* Model_TableViewCell.xib */; };
+		04A5C5C71FD1000900CDF939 /* XJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5C61FD1000900CDF939 /* XJModel.m */; };
+		04A5C5CD1FD12E7700CDF939 /* Tab_qk_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5CC1FD12E7700CDF939 /* Tab_qk_ViewController.m */; };
+		04A5C5D31FD12FC300CDF939 /* tab_qk_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5D11FD12FC300CDF939 /* tab_qk_TableViewCell.m */; };
+		04A5C5D41FD12FC300CDF939 /* tab_qk_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A5C5D21FD12FC300CDF939 /* tab_qk_TableViewCell.xib */; };
+		04A5C5D81FD145FA00CDF939 /* Main_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5C5D61FD145FA00CDF939 /* Main_TableViewCell.m */; };
+		04A5C5D91FD145FA00CDF939 /* Main_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A5C5D71FD145FA00CDF939 /* Main_TableViewCell.xib */; };
+		15C979968FEBF2378790F1C8 /* libPods-电池信息.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 463BA4E9A60105D89FA61FF0 /* libPods-电池信息.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0467624D1FCD461300FEA6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0467622C1FCD461200FEA6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046762331FCD461200FEA6B5;
+			remoteInfo = "电池信息";
+		};
+		046762581FCD461300FEA6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0467622C1FCD461200FEA6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046762331FCD461200FEA6B5;
+			remoteInfo = "电池信息";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046762341FCD461200FEA6B5 /* 电池信息.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电池信息.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		046762371FCD461200FEA6B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		046762381FCD461200FEA6B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0467623A1FCD461200FEA6B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0467623B1FCD461200FEA6B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0467623E1FCD461200FEA6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		046762401FCD461200FEA6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046762431FCD461200FEA6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046762451FCD461200FEA6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046762461FCD461200FEA6B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0467624C1FCD461300FEA6B5 /* 电池信息Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电池信息Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		046762501FCD461300FEA6B5 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		046762521FCD461300FEA6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046762571FCD461300FEA6B5 /* 电池信息UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电池信息UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0467625B1FCD461300FEA6B5 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		0467625D1FCD461300FEA6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A5C5B61FD0EAE300CDF939 /* ViewController_boolk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController_boolk.h; sourceTree = "<group>"; };
+		04A5C5B71FD0EAE300CDF939 /* ViewController_boolk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_boolk.m; sourceTree = "<group>"; };
+		04A5C5B91FD0FA1600CDF939 /* Model_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model_ViewController.h; sourceTree = "<group>"; };
+		04A5C5BA1FD0FA1600CDF939 /* Model_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model_ViewController.m; sourceTree = "<group>"; };
+		04A5C5BC1FD0FA4000CDF939 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04A5C5C01FD0FE5100CDF939 /* Model_TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model_TableViewCell.h; sourceTree = "<group>"; };
+		04A5C5C11FD0FE5100CDF939 /* Model_TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model_TableViewCell.m; sourceTree = "<group>"; };
+		04A5C5C21FD0FE5100CDF939 /* Model_TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Model_TableViewCell.xib; sourceTree = "<group>"; };
+		04A5C5C51FD1000900CDF939 /* XJModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJModel.h; sourceTree = "<group>"; };
+		04A5C5C61FD1000900CDF939 /* XJModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJModel.m; sourceTree = "<group>"; };
+		04A5C5CB1FD12E7700CDF939 /* Tab_qk_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tab_qk_ViewController.h; sourceTree = "<group>"; };
+		04A5C5CC1FD12E7700CDF939 /* Tab_qk_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tab_qk_ViewController.m; sourceTree = "<group>"; };
+		04A5C5D01FD12FC300CDF939 /* tab_qk_TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tab_qk_TableViewCell.h; sourceTree = "<group>"; };
+		04A5C5D11FD12FC300CDF939 /* tab_qk_TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tab_qk_TableViewCell.m; sourceTree = "<group>"; };
+		04A5C5D21FD12FC300CDF939 /* tab_qk_TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tab_qk_TableViewCell.xib; sourceTree = "<group>"; };
+		04A5C5D51FD145FA00CDF939 /* Main_TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Main_TableViewCell.h; sourceTree = "<group>"; };
+		04A5C5D61FD145FA00CDF939 /* Main_TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Main_TableViewCell.m; sourceTree = "<group>"; };
+		04A5C5D71FD145FA00CDF939 /* Main_TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Main_TableViewCell.xib; sourceTree = "<group>"; };
+		252ACD71C860063CDDAF58DE /* Pods-电池信息.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电池信息.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电池信息/Pods-电池信息.debug.xcconfig"; sourceTree = "<group>"; };
+		463BA4E9A60105D89FA61FF0 /* libPods-电池信息.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电池信息.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		975CB39559285358D0E8106C /* Pods-电池信息.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电池信息.release.xcconfig"; path = "Pods/Target Support Files/Pods-电池信息/Pods-电池信息.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046762311FCD461200FEA6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C979968FEBF2378790F1C8 /* libPods-电池信息.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046762491FCD461300FEA6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046762541FCD461300FEA6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0467622B1FCD461200FEA6B5 = {
+			isa = PBXGroup;
+			children = (
+				046762361FCD461200FEA6B5 /* 电池信息 */,
+				0467624F1FCD461300FEA6B5 /* 电池信息Tests */,
+				0467625A1FCD461300FEA6B5 /* 电池信息UITests */,
+				046762351FCD461200FEA6B5 /* Products */,
+				F6A01875AD87250FDD24E3EF /* Pods */,
+				0CD7C80406CEBD073D156BBF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		046762351FCD461200FEA6B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046762341FCD461200FEA6B5 /* 电池信息.app */,
+				0467624C1FCD461300FEA6B5 /* 电池信息Tests.xctest */,
+				046762571FCD461300FEA6B5 /* 电池信息UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046762361FCD461200FEA6B5 /* 电池信息 */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5CA1FD12E3F00CDF939 /* 表格清空解决办法 */,
+				04A5C5C91FD12E2E00CDF939 /* Model */,
+				04A5C5C81FD12E1D00CDF939 /* Boolk回调 */,
+				046762371FCD461200FEA6B5 /* AppDelegate.h */,
+				046762381FCD461200FEA6B5 /* AppDelegate.m */,
+				0467623A1FCD461200FEA6B5 /* ViewController.h */,
+				0467623B1FCD461200FEA6B5 /* ViewController.m */,
+				04A5C5D51FD145FA00CDF939 /* Main_TableViewCell.h */,
+				04A5C5D61FD145FA00CDF939 /* Main_TableViewCell.m */,
+				04A5C5D71FD145FA00CDF939 /* Main_TableViewCell.xib */,
+				0467623D1FCD461200FEA6B5 /* Main.storyboard */,
+				046762401FCD461200FEA6B5 /* Assets.xcassets */,
+				046762421FCD461200FEA6B5 /* LaunchScreen.storyboard */,
+				046762451FCD461200FEA6B5 /* Info.plist */,
+				046762461FCD461200FEA6B5 /* main.m */,
+				04A5C5BC1FD0FA4000CDF939 /* PrefixHeader.pch */,
+			);
+			path = "电池信息";
+			sourceTree = "<group>";
+		};
+		0467624F1FCD461300FEA6B5 /* 电池信息Tests */ = {
+			isa = PBXGroup;
+			children = (
+				046762501FCD461300FEA6B5 /* ____Tests.m */,
+				046762521FCD461300FEA6B5 /* Info.plist */,
+			);
+			path = "电池信息Tests";
+			sourceTree = "<group>";
+		};
+		0467625A1FCD461300FEA6B5 /* 电池信息UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0467625B1FCD461300FEA6B5 /* ____UITests.m */,
+				0467625D1FCD461300FEA6B5 /* Info.plist */,
+			);
+			path = "电池信息UITests";
+			sourceTree = "<group>";
+		};
+		04A5C5BD1FD0FE2000CDF939 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5B91FD0FA1600CDF939 /* Model_ViewController.h */,
+				04A5C5BA1FD0FA1600CDF939 /* Model_ViewController.m */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		04A5C5BE1FD0FE2800CDF939 /* v */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5C01FD0FE5100CDF939 /* Model_TableViewCell.h */,
+				04A5C5C11FD0FE5100CDF939 /* Model_TableViewCell.m */,
+				04A5C5C21FD0FE5100CDF939 /* Model_TableViewCell.xib */,
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		04A5C5BF1FD0FE2F00CDF939 /* m */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5C51FD1000900CDF939 /* XJModel.h */,
+				04A5C5C61FD1000900CDF939 /* XJModel.m */,
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
+		04A5C5C81FD12E1D00CDF939 /* Boolk回调 */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5B61FD0EAE300CDF939 /* ViewController_boolk.h */,
+				04A5C5B71FD0EAE300CDF939 /* ViewController_boolk.m */,
+			);
+			path = "Boolk回调";
+			sourceTree = "<group>";
+		};
+		04A5C5C91FD12E2E00CDF939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5BF1FD0FE2F00CDF939 /* m */,
+				04A5C5BE1FD0FE2800CDF939 /* v */,
+				04A5C5BD1FD0FE2000CDF939 /* c */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A5C5CA1FD12E3F00CDF939 /* 表格清空解决办法 */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5CF1FD12FAD00CDF939 /* v */,
+				04A5C5CE1FD12FA500CDF939 /* c */,
+			);
+			path = "表格清空解决办法";
+			sourceTree = "<group>";
+		};
+		04A5C5CE1FD12FA500CDF939 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5CB1FD12E7700CDF939 /* Tab_qk_ViewController.h */,
+				04A5C5CC1FD12E7700CDF939 /* Tab_qk_ViewController.m */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		04A5C5CF1FD12FAD00CDF939 /* v */ = {
+			isa = PBXGroup;
+			children = (
+				04A5C5D01FD12FC300CDF939 /* tab_qk_TableViewCell.h */,
+				04A5C5D11FD12FC300CDF939 /* tab_qk_TableViewCell.m */,
+				04A5C5D21FD12FC300CDF939 /* tab_qk_TableViewCell.xib */,
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		0CD7C80406CEBD073D156BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				463BA4E9A60105D89FA61FF0 /* libPods-电池信息.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A01875AD87250FDD24E3EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				252ACD71C860063CDDAF58DE /* Pods-电池信息.debug.xcconfig */,
+				975CB39559285358D0E8106C /* Pods-电池信息.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046762331FCD461200FEA6B5 /* 电池信息 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046762601FCD461300FEA6B5 /* Build configuration list for PBXNativeTarget "电池信息" */;
+			buildPhases = (
+				63B6B60103F1547CB9A9C8A4 /* [CP] Check Pods Manifest.lock */,
+				046762301FCD461200FEA6B5 /* Sources */,
+				046762311FCD461200FEA6B5 /* Frameworks */,
+				046762321FCD461200FEA6B5 /* Resources */,
+				7313D7B63016FD54EE64AE85 /* [CP] Embed Pods Frameworks */,
+				F86446E0B7CEBA61DF4AD129 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "电池信息";
+			productName = "电池信息";
+			productReference = 046762341FCD461200FEA6B5 /* 电池信息.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0467624B1FCD461300FEA6B5 /* 电池信息Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046762631FCD461300FEA6B5 /* Build configuration list for PBXNativeTarget "电池信息Tests" */;
+			buildPhases = (
+				046762481FCD461300FEA6B5 /* Sources */,
+				046762491FCD461300FEA6B5 /* Frameworks */,
+				0467624A1FCD461300FEA6B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0467624E1FCD461300FEA6B5 /* PBXTargetDependency */,
+			);
+			name = "电池信息Tests";
+			productName = "电池信息Tests";
+			productReference = 0467624C1FCD461300FEA6B5 /* 电池信息Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		046762561FCD461300FEA6B5 /* 电池信息UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046762661FCD461300FEA6B5 /* Build configuration list for PBXNativeTarget "电池信息UITests" */;
+			buildPhases = (
+				046762531FCD461300FEA6B5 /* Sources */,
+				046762541FCD461300FEA6B5 /* Frameworks */,
+				046762551FCD461300FEA6B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046762591FCD461300FEA6B5 /* PBXTargetDependency */,
+			);
+			name = "电池信息UITests";
+			productName = "电池信息UITests";
+			productReference = 046762571FCD461300FEA6B5 /* 电池信息UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0467622C1FCD461200FEA6B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = MAc;
+				TargetAttributes = {
+					046762331FCD461200FEA6B5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					0467624B1FCD461300FEA6B5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 046762331FCD461200FEA6B5;
+					};
+					046762561FCD461300FEA6B5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 046762331FCD461200FEA6B5;
+					};
+				};
+			};
+			buildConfigurationList = 0467622F1FCD461200FEA6B5 /* Build configuration list for PBXProject "电池信息" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0467622B1FCD461200FEA6B5;
+			productRefGroup = 046762351FCD461200FEA6B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046762331FCD461200FEA6B5 /* 电池信息 */,
+				0467624B1FCD461300FEA6B5 /* 电池信息Tests */,
+				046762561FCD461300FEA6B5 /* 电池信息UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046762321FCD461200FEA6B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A5C5D91FD145FA00CDF939 /* Main_TableViewCell.xib in Resources */,
+				046762441FCD461200FEA6B5 /* LaunchScreen.storyboard in Resources */,
+				046762411FCD461200FEA6B5 /* Assets.xcassets in Resources */,
+				04A5C5D41FD12FC300CDF939 /* tab_qk_TableViewCell.xib in Resources */,
+				0467623F1FCD461200FEA6B5 /* Main.storyboard in Resources */,
+				04A5C5C41FD0FE5100CDF939 /* Model_TableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0467624A1FCD461300FEA6B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046762551FCD461300FEA6B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63B6B60103F1547CB9A9C8A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-电池信息-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7313D7B63016FD54EE64AE85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电池信息/Pods-电池信息-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86446E0B7CEBA61DF4AD129 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-电池信息/Pods-电池信息-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电池信息/Pods-电池信息-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046762301FCD461200FEA6B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A5C5D31FD12FC300CDF939 /* tab_qk_TableViewCell.m in Sources */,
+				0467623C1FCD461200FEA6B5 /* ViewController.m in Sources */,
+				046762471FCD461200FEA6B5 /* main.m in Sources */,
+				04A5C5CD1FD12E7700CDF939 /* Tab_qk_ViewController.m in Sources */,
+				04A5C5C71FD1000900CDF939 /* XJModel.m in Sources */,
+				04A5C5B81FD0EAE300CDF939 /* ViewController_boolk.m in Sources */,
+				04A5C5D81FD145FA00CDF939 /* Main_TableViewCell.m in Sources */,
+				04A5C5C31FD0FE5100CDF939 /* Model_TableViewCell.m in Sources */,
+				04A5C5BB1FD0FA1600CDF939 /* Model_ViewController.m in Sources */,
+				046762391FCD461200FEA6B5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046762481FCD461300FEA6B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046762511FCD461300FEA6B5 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046762531FCD461300FEA6B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0467625C1FCD461300FEA6B5 /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0467624E1FCD461300FEA6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046762331FCD461200FEA6B5 /* 电池信息 */;
+			targetProxy = 0467624D1FCD461300FEA6B5 /* PBXContainerItemProxy */;
+		};
+		046762591FCD461300FEA6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046762331FCD461200FEA6B5 /* 电池信息 */;
+			targetProxy = 046762581FCD461300FEA6B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0467623D1FCD461200FEA6B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0467623E1FCD461200FEA6B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		046762421FCD461200FEA6B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046762431FCD461200FEA6B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0467625E1FCD461300FEA6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0467625F1FCD461300FEA6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046762611FCD461300FEA6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252ACD71C860063CDDAF58DE /* Pods-电池信息.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VVDHDYS93;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/电池信息/PrefixHeader.pch";
+				INFOPLIST_FILE = "电池信息/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biggerapp.tanapp7662c.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046762621FCD461300FEA6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975CB39559285358D0E8106C /* Pods-电池信息.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VVDHDYS93;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/电池信息/PrefixHeader.pch";
+				INFOPLIST_FILE = "电池信息/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biggerapp.tanapp7662c.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		046762641FCD461300FEA6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "电池信息Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biggerapp.tanapp7662c.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/电池信息.app/电池信息";
+			};
+			name = Debug;
+		};
+		046762651FCD461300FEA6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "电池信息Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biggerapp.tanapp7662c.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/电池信息.app/电池信息";
+			};
+			name = Release;
+		};
+		046762671FCD461300FEA6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "电池信息UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biggerapp.tanapp7662c.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "电池信息";
+			};
+			name = Debug;
+		};
+		046762681FCD461300FEA6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "电池信息UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biggerapp.tanapp7662c.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "电池信息";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0467622F1FCD461200FEA6B5 /* Build configuration list for PBXProject "电池信息" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0467625E1FCD461300FEA6B5 /* Debug */,
+				0467625F1FCD461300FEA6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046762601FCD461300FEA6B5 /* Build configuration list for PBXNativeTarget "电池信息" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046762611FCD461300FEA6B5 /* Debug */,
+				046762621FCD461300FEA6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046762631FCD461300FEA6B5 /* Build configuration list for PBXNativeTarget "电池信息Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046762641FCD461300FEA6B5 /* Debug */,
+				046762651FCD461300FEA6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046762661FCD461300FEA6B5 /* Build configuration list for PBXNativeTarget "电池信息UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046762671FCD461300FEA6B5 /* Debug */,
+				046762681FCD461300FEA6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0467622C1FCD461200FEA6B5 /* Project object */;
+}

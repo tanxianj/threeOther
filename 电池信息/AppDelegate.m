@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //nav 手势处理 ,
+    /*
+     MLTransitionGestureRecognizerTypeScreenEdgePan //屏幕边缘
+     MLTransitionGestureRecognizerTypePan //屏幕内
+     */
+     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
     return YES;
 }
 
