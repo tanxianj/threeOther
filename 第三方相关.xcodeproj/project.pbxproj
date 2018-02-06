@@ -43,7 +43,6 @@
 		04E098FA1FD6361B00DAF04A /* cell_showAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E098F81FD6361B00DAF04A /* cell_showAllTableViewCell.m */; };
 		04E098FB1FD6361B00DAF04A /* cell_showAllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E098F91FD6361B00DAF04A /* cell_showAllTableViewCell.xib */; };
 		04E099021FD64C3000DAF04A /* YJProgressHUD_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E099011FD64C3000DAF04A /* YJProgressHUD_ViewController.m */; };
-		15C979968FEBF2378790F1C8 /* libPods-电池信息.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 463BA4E9A60105D89FA61FF0 /* libPods-电池信息.a */; };
 		360D2E0A20201DAA0061A4ED /* Lookimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 360D2E0920201DAA0061A4ED /* Lookimage.m */; };
 		360D2E0E202068940061A4ED /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360D2E0D202068940061A4ED /* RadioViewController.m */; };
 		360D2E16202154C70061A4ED /* RemoveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360D2E15202154C70061A4ED /* RemoveListViewController.m */; };
@@ -263,7 +262,6 @@
 		36F320A42017264E0072ACFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		36F320A7201815B50072ACFD /* NavCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavCollectionView.h; sourceTree = "<group>"; };
 		36F320A8201815B50072ACFD /* NavCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavCollectionView.m; sourceTree = "<group>"; };
-		463BA4E9A60105D89FA61FF0 /* libPods-电池信息.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电池信息.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80230ED28063A53EBCCE783E /* Pods-第三方相关.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-第三方相关.release.xcconfig"; path = "Pods/Target Support Files/Pods-第三方相关/Pods-第三方相关.release.xcconfig"; sourceTree = "<group>"; };
 		975CB39559285358D0E8106C /* Pods-电池信息.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电池信息.release.xcconfig"; path = "Pods/Target Support Files/Pods-电池信息/Pods-电池信息.release.xcconfig"; sourceTree = "<group>"; };
 		9771C0616ACBEDA439B0226B /* libPods-第三方相关.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-第三方相关.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36CB5038200EF4BE00788C70 /* WebKit.framework in Frameworks */,
-				15C979968FEBF2378790F1C8 /* libPods-电池信息.a in Frameworks */,
 				A47008ADABDE8E72C28B9F01 /* libPods-第三方相关.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +403,8 @@
 			isa = PBXGroup;
 			children = (
 				046762361FCD461200FEA6B5 /* 电池信息 */,
-				0467624F1FCD461300FEA6B5 /* 电池信息Tests */,
-				0467625A1FCD461300FEA6B5 /* 电池信息UITests */,
+				0467624F1FCD461300FEA6B5 /* 第三方相关Tests */,
+				0467625A1FCD461300FEA6B5 /* 第三方相关UITests */,
 				046762351FCD461200FEA6B5 /* Products */,
 				F6A01875AD87250FDD24E3EF /* Pods */,
 				0CD7C80406CEBD073D156BBF /* Frameworks */,
@@ -475,22 +472,22 @@
 			path = "电池信息";
 			sourceTree = "<group>";
 		};
-		0467624F1FCD461300FEA6B5 /* 电池信息Tests */ = {
+		0467624F1FCD461300FEA6B5 /* 第三方相关Tests */ = {
 			isa = PBXGroup;
 			children = (
 				046762501FCD461300FEA6B5 /* ____Tests.m */,
 				046762521FCD461300FEA6B5 /* Info.plist */,
 			);
-			path = "电池信息Tests";
+			path = "第三方相关Tests";
 			sourceTree = "<group>";
 		};
-		0467625A1FCD461300FEA6B5 /* 电池信息UITests */ = {
+		0467625A1FCD461300FEA6B5 /* 第三方相关UITests */ = {
 			isa = PBXGroup;
 			children = (
 				0467625B1FCD461300FEA6B5 /* ____UITests.m */,
 				0467625D1FCD461300FEA6B5 /* Info.plist */,
 			);
-			path = "电池信息UITests";
+			path = "第三方相关UITests";
 			sourceTree = "<group>";
 		};
 		04A5C5BD1FD0FE2000CDF939 /* c */ = {
@@ -639,7 +636,6 @@
 			isa = PBXGroup;
 			children = (
 				36CB5037200EF4BE00788C70 /* WebKit.framework */,
-				463BA4E9A60105D89FA61FF0 /* libPods-电池信息.a */,
 				9771C0616ACBEDA439B0226B /* libPods-第三方相关.a */,
 			);
 			name = Frameworks;
