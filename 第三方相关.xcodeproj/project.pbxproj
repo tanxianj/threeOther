@@ -73,6 +73,8 @@
 		369F4CA52028264000CA7A89 /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CA42028264000CA7A89 /* GoodsViewController.m */; };
 		369F4CA92028265700CA7A89 /* googsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CA72028265700CA7A89 /* googsTableViewCell.m */; };
 		369F4CAA2028265700CA7A89 /* googsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369F4CA82028265700CA7A89 /* googsTableViewCell.xib */; };
+		369F4CAF202951BE00CA7A89 /* UIImageView+LoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CAD202951BE00CA7A89 /* UIImageView+LoadImage.m */; };
+		369F4CB0202951BE00CA7A89 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CAE202951BE00CA7A89 /* UIImage+Category.m */; };
 		36CB5038200EF4BE00788C70 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB5037200EF4BE00788C70 /* WebKit.framework */; };
 		36CEE9F3200DC9D1009DACC0 /* UIWindow+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CEE9F2200DC9D1009DACC0 /* UIWindow+Motion.m */; };
 		36CEE9F7200EE361009DACC0 /* XieyiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CEE9F6200EE361009DACC0 /* XieyiViewController.m */; };
@@ -231,6 +233,10 @@
 		369F4CA62028265700CA7A89 /* googsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = googsTableViewCell.h; sourceTree = "<group>"; };
 		369F4CA72028265700CA7A89 /* googsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = googsTableViewCell.m; sourceTree = "<group>"; };
 		369F4CA82028265700CA7A89 /* googsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = googsTableViewCell.xib; sourceTree = "<group>"; };
+		369F4CAB202951BE00CA7A89 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		369F4CAC202951BE00CA7A89 /* UIImageView+LoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LoadImage.h"; sourceTree = "<group>"; };
+		369F4CAD202951BE00CA7A89 /* UIImageView+LoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LoadImage.m"; sourceTree = "<group>"; };
+		369F4CAE202951BE00CA7A89 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
 		36CB5037200EF4BE00788C70 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		36CEE9F1200DC9D0009DACC0 /* UIWindow+Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Motion.h"; sourceTree = "<group>"; };
 		36CEE9F2200DC9D1009DACC0 /* UIWindow+Motion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Motion.m"; sourceTree = "<group>"; };
@@ -712,6 +718,10 @@
 		362D3441201861960070D2F4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				369F4CAB202951BE00CA7A89 /* UIImage+Category.h */,
+				369F4CAE202951BE00CA7A89 /* UIImage+Category.m */,
+				369F4CAC202951BE00CA7A89 /* UIImageView+LoadImage.h */,
+				369F4CAD202951BE00CA7A89 /* UIImageView+LoadImage.m */,
 				362D3442201861B10070D2F4 /* UIColor+APPcolor.h */,
 				362D3443201861B10070D2F4 /* UIColor+APPcolor.m */,
 			);
@@ -1113,6 +1123,7 @@
 				360D2E0E202068940061A4ED /* RadioViewController.m in Sources */,
 				0431B6581FD67D2200007426 /* MJProgressHUD.m in Sources */,
 				0431B66A1FD7892900007426 /* Pubuliu_CollectionViewCell.m in Sources */,
+				369F4CAF202951BE00CA7A89 /* UIImageView+LoadImage.m in Sources */,
 				0467623C1FCD461200FEA6B5 /* ViewController.m in Sources */,
 				04E098F61FD6301A00DAF04A /* Cell_showAllViewController.m in Sources */,
 				04E098A91FD5326A00DAF04A /* UITableView_hegiht_ViewController.m in Sources */,
@@ -1145,6 +1156,7 @@
 				04A5C5C71FD1000900CDF939 /* XJModel.m in Sources */,
 				04E098AF1FD5342600DAF04A /* UITable_height_TableViewCell.m in Sources */,
 				36F320A9201815B50072ACFD /* NavCollectionView.m in Sources */,
+				369F4CB0202951BE00CA7A89 /* UIImage+Category.m in Sources */,
 				36E1F90A201EF59F00227FA9 /* EvaluaTionCollectionViewCell.m in Sources */,
 				361F5B212015C1A40098A3AD /* View_wg_test_Viewcontroller.m in Sources */,
 				36CEE9F3200DC9D1009DACC0 /* UIWindow+Motion.m in Sources */,
