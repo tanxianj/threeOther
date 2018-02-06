@@ -75,6 +75,7 @@
 		369F4CAA2028265700CA7A89 /* googsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369F4CA82028265700CA7A89 /* googsTableViewCell.xib */; };
 		369F4CAF202951BE00CA7A89 /* UIImageView+LoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CAD202951BE00CA7A89 /* UIImageView+LoadImage.m */; };
 		369F4CB0202951BE00CA7A89 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CAE202951BE00CA7A89 /* UIImage+Category.m */; };
+		369F4CBA20297C3700CA7A89 /* UpimageArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CB920297C3700CA7A89 /* UpimageArrayViewController.m */; };
 		36CB5038200EF4BE00788C70 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CB5037200EF4BE00788C70 /* WebKit.framework */; };
 		36CEE9F3200DC9D1009DACC0 /* UIWindow+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CEE9F2200DC9D1009DACC0 /* UIWindow+Motion.m */; };
 		36CEE9F7200EE361009DACC0 /* XieyiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CEE9F6200EE361009DACC0 /* XieyiViewController.m */; };
@@ -237,6 +238,8 @@
 		369F4CAC202951BE00CA7A89 /* UIImageView+LoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LoadImage.h"; sourceTree = "<group>"; };
 		369F4CAD202951BE00CA7A89 /* UIImageView+LoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LoadImage.m"; sourceTree = "<group>"; };
 		369F4CAE202951BE00CA7A89 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		369F4CB820297C3700CA7A89 /* UpimageArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpimageArrayViewController.h; sourceTree = "<group>"; };
+		369F4CB920297C3700CA7A89 /* UpimageArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpimageArrayViewController.m; sourceTree = "<group>"; };
 		36CB5037200EF4BE00788C70 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		36CEE9F1200DC9D0009DACC0 /* UIWindow+Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Motion.h"; sourceTree = "<group>"; };
 		36CEE9F2200DC9D1009DACC0 /* UIWindow+Motion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Motion.m"; sourceTree = "<group>"; };
@@ -430,6 +433,7 @@
 		046762361FCD461200FEA6B5 /* 电池信息 */ = {
 			isa = PBXGroup;
 			children = (
+				369F4CB720297C0800CA7A89 /* 多图上传 */,
 				369F4CA22028261E00CA7A89 /* 商品列表 */,
 				360D2E132021547B0061A4ED /* 列表删除 */,
 				360D2E0B202068710061A4ED /* 部分圆角 */,
@@ -827,6 +831,15 @@
 			path = "商品列表";
 			sourceTree = "<group>";
 		};
+		369F4CB720297C0800CA7A89 /* 多图上传 */ = {
+			isa = PBXGroup;
+			children = (
+				369F4CB820297C3700CA7A89 /* UpimageArrayViewController.h */,
+				369F4CB920297C3700CA7A89 /* UpimageArrayViewController.m */,
+			);
+			path = "多图上传";
+			sourceTree = "<group>";
+		};
 		36CEE9F4200EE345009DACC0 /* 协议 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1131,6 +1144,7 @@
 				0431B6661FD785E100007426 /* pubuliuLayout.m in Sources */,
 				362D3440201859FF0070D2F4 /* PayView.m in Sources */,
 				361F5ACD2015802F0098A3AD /* View_tool_ViewController.m in Sources */,
+				369F4CBA20297C3700CA7A89 /* UpimageArrayViewController.m in Sources */,
 				046762471FCD461200FEA6B5 /* main.m in Sources */,
 				369F4CA52028264000CA7A89 /* GoodsViewController.m in Sources */,
 				36E1F8F6201EC0A500227FA9 /* UIView+Screenshot.m in Sources */,
