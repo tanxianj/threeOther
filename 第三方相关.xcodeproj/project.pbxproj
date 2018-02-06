@@ -426,7 +426,6 @@
 			children = (
 				369F4CA22028261E00CA7A89 /* 商品列表 */,
 				360D2E132021547B0061A4ED /* 列表删除 */,
-				360D2E0F202076B10061A4ED /* 分组排序 */,
 				360D2E0B202068710061A4ED /* 部分圆角 */,
 				36E1F8FD201EEB9D00227FA9 /* 评价列表 */,
 				362D3454201979850070D2F4 /* 商品评价 */,
@@ -657,13 +656,6 @@
 				360D2E0D202068940061A4ED /* RadioViewController.m */,
 			);
 			path = "部分圆角";
-			sourceTree = "<group>";
-		};
-		360D2E0F202076B10061A4ED /* 分组排序 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "分组排序";
 			sourceTree = "<group>";
 		};
 		360D2E132021547B0061A4ED /* 列表删除 */ = {

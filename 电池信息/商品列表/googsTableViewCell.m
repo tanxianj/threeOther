@@ -38,13 +38,15 @@
     }else{
         numberr--;
         self.number.text = [NSString stringWithFormat:@"%lu",numberr];
+        /* 取消上次点击的延时操作
+        
         [[NSRunLoop currentRunLoop] cancelPerformSelector:@selector(deletegoods) target:self argument:nil];
                 [self.timer invalidate];
         self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:3.0]
                                               interval:0 target:self selector:@selector(deletegoods) userInfo:nil repeats:NO];
                 [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-        
-        
+        */
+        [self deletegoods];
     }
     
     
@@ -62,13 +64,16 @@
     }else{
         numberr++;
         self.number.text = [NSString stringWithFormat:@"%lu",numberr];
+        /* 取消上次点击的延时操作
+        
         
         [[NSRunLoop currentRunLoop] cancelPerformSelector:@selector(addgoods) target:self argument:nil];
         [self.timer invalidate];
         self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:3.0]
                                               interval:0 target:self selector:@selector(addgoods) userInfo:nil repeats:NO];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-        
+        */
+        [self addgoods];
         
     }
     
