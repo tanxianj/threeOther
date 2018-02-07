@@ -21,34 +21,67 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _imgArray = [NSMutableArray arrayWithCapacity:9];
+    [self changeNetWoking];
 }
 -(void)SetNavOther{
     self.title = @"多图上传";
     [self AddBackBtn];
+    
 }
-
+-(void)changeNetWoking{
+    [[AFNetworkReachabilityManager sharedManager]setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                XJLog(@"未知网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                XJLog(@"WIFI网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                XJLog(@"4G网络");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                XJLog(@"没有网络");
+                break;
+            default:
+                break;
+        }
+    }];
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+}
 -(void)upImage{
-    TZImagePickerController *imgview = [[TZImagePickerController alloc]initWithMaxImagesCount:9 delegate:self];
+    TZImagePickerController *imgview = [[TZImagePickerController alloc]initWithMaxImagesCount:999999 delegate:self];
     [imgview setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
         XJLog(@"photos is %@ --",photos);
 
-        _imgArray = [photos mutableCopy];
-//        [_imgArray addObjectsFromArray:photos];
+//        _imgArray = [photos mutableCopy];
+        [_imgArray addObjectsFromArray:photos];
         [_collectionView reloadData];
     }];
     [self.navigationController presentViewController:imgview animated:YES completion:nil];
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return _imgArray.count;
+    return _imgArray.count+1;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     upImgCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:Cellid forIndexPath:indexPath];
-    cell.imgview.image = _imgArray[indexPath.row];
+    
+    if (indexPath.row == _imgArray.count) {
+//        evaluation_icon_picture
+        cell.imgview.image = [UIImage imageNamed:@"evaluation_icon_picture"];
+    }else{
+            cell.imgview.image = _imgArray[indexPath.row];
+    }
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [_imgArray removeObjectAtIndex:indexPath.row];
-    [_collectionView reloadData];
+    if (indexPath.row == _imgArray.count) {
+        [self upImage];
+    }else{
+        [_imgArray removeObjectAtIndex:indexPath.row];
+        [_collectionView reloadData];
+    }
+    
 }
 /*
 -(void)tz_imagePickerControllerDidCancel:(TZImagePickerController *)picker{

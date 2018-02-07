@@ -68,6 +68,7 @@
 		362DE56A20037C630052975C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 362DE56420037C620052975C /* ViewController2.m */; };
 		362DE56B20037C630052975C /* xx.png in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56520037C620052975C /* xx.png */; };
 		362DE56C20037C630052975C /* TableViewCellfwb.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56720037C630052975C /* TableViewCellfwb.xib */; };
+		36501692202AF31C00DBCBBD /* BUttonViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501691202AF31C00DBCBBD /* BUttonViewContorller.m */; };
 		366C280B20245E9900925B49 /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 366C280920245E9800925B49 /* HTTPSessionManager.m */; };
 		36841F312024411900874413 /* GETback.m in Sources */ = {isa = PBXBuildFile; fileRef = 36841F302024411900874413 /* GETback.m */; };
 		369F4CA52028264000CA7A89 /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CA42028264000CA7A89 /* GoodsViewController.m */; };
@@ -223,6 +224,8 @@
 		362DE56520037C620052975C /* xx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx.png; sourceTree = "<group>"; };
 		362DE56620037C630052975C /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		362DE56720037C630052975C /* TableViewCellfwb.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellfwb.xib; sourceTree = "<group>"; };
+		36501690202AF31C00DBCBBD /* BUttonViewContorller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUttonViewContorller.h; sourceTree = "<group>"; };
+		36501691202AF31C00DBCBBD /* BUttonViewContorller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUttonViewContorller.m; sourceTree = "<group>"; };
 		366C280920245E9800925B49 /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
 		366C280A20245E9900925B49 /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
 		36841F2F2024411900874413 /* GETback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GETback.h; sourceTree = "<group>"; };
@@ -433,6 +436,7 @@
 		046762361FCD461200FEA6B5 /* 电池信息 */ = {
 			isa = PBXGroup;
 			children = (
+				3650168C202AF22600DBCBBD /* 按钮选中 */,
 				369F4CB720297C0800CA7A89 /* 多图上传 */,
 				369F4CA22028261E00CA7A89 /* 商品列表 */,
 				360D2E132021547B0061A4ED /* 列表删除 */,
@@ -799,6 +803,15 @@
 				362DE56720037C630052975C /* TableViewCellfwb.xib */,
 			);
 			path = "富文本";
+			sourceTree = "<group>";
+		};
+		3650168C202AF22600DBCBBD /* 按钮选中 */ = {
+			isa = PBXGroup;
+			children = (
+				36501690202AF31C00DBCBBD /* BUttonViewContorller.h */,
+				36501691202AF31C00DBCBBD /* BUttonViewContorller.m */,
+			);
+			path = "按钮选中";
 			sourceTree = "<group>";
 		};
 		366C27D020245A6B00925B49 /* ZXPUnicode */ = {
@@ -1182,6 +1195,7 @@
 				04A5C5C31FD0FE5100CDF939 /* Model_TableViewCell.m in Sources */,
 				04A5C5BB1FD0FA1600CDF939 /* Model_ViewController.m in Sources */,
 				046762391FCD461200FEA6B5 /* AppDelegate.m in Sources */,
+				36501692202AF31C00DBCBBD /* BUttonViewContorller.m in Sources */,
 				36F320A220171BB30072ACFD /* UIImage+ImageSize.m in Sources */,
 				362D3457201979E20070D2F4 /* goodsEvaluationViewController.m in Sources */,
 				362D3444201861B10070D2F4 /* UIColor+APPcolor.m in Sources */,

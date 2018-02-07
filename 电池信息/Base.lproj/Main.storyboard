@@ -440,6 +440,151 @@
             </objects>
             <point key="canvasLocation" x="4405" y="2085"/>
         </scene>
+        <!--Utton View Contorller-->
+        <scene sceneID="51K-eC-gsc">
+            <objects>
+                <viewController storyboardIdentifier="buttonsect" id="iq0-Fj-aS3" customClass="BUttonViewContorller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4sa-kA-v8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="ocV-sP-flO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0iy-yv-joO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-Sm-knT">
+                                <rect key="frame" x="10" y="30" width="170" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="RjQ-ci-3ln"/>
+                                    <constraint firstAttribute="height" constant="57" id="mTF-mG-eRg"/>
+                                </constraints>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="uKx-vA-m9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96m-Dv-R0z">
+                                <rect key="frame" x="10" y="97" width="170" height="57"/>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color"/>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="OeS-LM-coj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-8a-M7Y">
+                                <rect key="frame" x="195" y="30" width="170" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="QIH-uF-Ulk"/>
+                                    <constraint firstAttribute="height" constant="57" id="bTy-jr-6PL"/>
+                                </constraints>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="FWe-Rw-ClK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-1k-XHF">
+                                <rect key="frame" x="195" y="97" width="170" height="57"/>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color"/>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="kDp-mk-f3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-4e-5j8">
+                                <rect key="frame" x="10" y="164" width="170" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="AjO-lr-CWT"/>
+                                    <constraint firstAttribute="width" constant="170" id="j25-H2-ouO"/>
+                                </constraints>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="ASp-iw-URx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-Ii-oqk">
+                                <rect key="frame" x="10" y="231" width="170" height="57"/>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color"/>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="RH6-pc-do9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keU-zh-dKm">
+                                <rect key="frame" x="195" y="164" width="170" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="2vL-fh-hmr"/>
+                                    <constraint firstAttribute="height" constant="57" id="qOQ-cU-P8p"/>
+                                </constraints>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="1Dj-4X-Egl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lh-Jl-8uL">
+                                <rect key="frame" x="195" y="231" width="170" height="57"/>
+                                <state key="normal" image="hongbao_gudong"/>
+                                <state key="selected" image="hongbao_gudong_color"/>
+                                <connections>
+                                    <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="f1W-n6-TiF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="96m-Dv-R0z" firstAttribute="width" secondItem="oQg-Sm-knT" secondAttribute="width" id="6Rf-ml-96q"/>
+                            <constraint firstItem="pBL-1k-XHF" firstAttribute="height" secondItem="dfn-8a-M7Y" secondAttribute="height" id="6vP-GK-nUi"/>
+                            <constraint firstItem="pBL-1k-XHF" firstAttribute="width" secondItem="dfn-8a-M7Y" secondAttribute="width" id="ACO-j5-nHa"/>
+                            <constraint firstItem="dfn-8a-M7Y" firstAttribute="top" secondItem="oQg-Sm-knT" secondAttribute="top" id="AG2-gs-h99"/>
+                            <constraint firstItem="8Lh-Jl-8uL" firstAttribute="top" secondItem="keU-zh-dKm" secondAttribute="bottom" constant="10" id="ERw-RH-59J"/>
+                            <constraint firstItem="8Lh-Jl-8uL" firstAttribute="width" secondItem="keU-zh-dKm" secondAttribute="width" id="MeA-NV-GfT"/>
+                            <constraint firstItem="oQg-Sm-knT" firstAttribute="leading" secondItem="0iy-yv-joO" secondAttribute="leading" constant="10" id="Q6v-gl-gAc"/>
+                            <constraint firstItem="oQg-Sm-knT" firstAttribute="top" secondItem="4sa-kA-v8H" secondAttribute="bottom" constant="10" id="QHI-cb-aGM"/>
+                            <constraint firstItem="5l2-Ii-oqk" firstAttribute="top" secondItem="R9b-4e-5j8" secondAttribute="bottom" constant="10" id="RS6-oI-Bmz"/>
+                            <constraint firstItem="5l2-Ii-oqk" firstAttribute="leading" secondItem="R9b-4e-5j8" secondAttribute="leading" id="S0j-9z-beq"/>
+                            <constraint firstItem="pBL-1k-XHF" firstAttribute="leading" secondItem="dfn-8a-M7Y" secondAttribute="leading" id="T7a-Uw-mAc"/>
+                            <constraint firstItem="5l2-Ii-oqk" firstAttribute="height" secondItem="R9b-4e-5j8" secondAttribute="height" id="TX7-6q-Ybx"/>
+                            <constraint firstItem="R9b-4e-5j8" firstAttribute="top" secondItem="96m-Dv-R0z" secondAttribute="bottom" constant="10" id="avK-HX-t7q"/>
+                            <constraint firstItem="pBL-1k-XHF" firstAttribute="top" secondItem="dfn-8a-M7Y" secondAttribute="bottom" constant="10" id="bFe-Sw-62D"/>
+                            <constraint firstItem="96m-Dv-R0z" firstAttribute="leading" secondItem="oQg-Sm-knT" secondAttribute="leading" id="bIy-L5-nfo"/>
+                            <constraint firstItem="96m-Dv-R0z" firstAttribute="top" secondItem="oQg-Sm-knT" secondAttribute="bottom" constant="10" id="cGQ-iq-edZ"/>
+                            <constraint firstItem="96m-Dv-R0z" firstAttribute="height" secondItem="oQg-Sm-knT" secondAttribute="height" id="cQ7-wO-6dI"/>
+                            <constraint firstItem="5l2-Ii-oqk" firstAttribute="width" secondItem="R9b-4e-5j8" secondAttribute="width" id="dwE-sC-HUl"/>
+                            <constraint firstItem="8Lh-Jl-8uL" firstAttribute="leading" secondItem="keU-zh-dKm" secondAttribute="leading" id="hQG-HX-09w"/>
+                            <constraint firstItem="keU-zh-dKm" firstAttribute="top" secondItem="R9b-4e-5j8" secondAttribute="top" id="jJ1-UG-xrj"/>
+                            <constraint firstItem="keU-zh-dKm" firstAttribute="top" secondItem="pBL-1k-XHF" secondAttribute="bottom" constant="10" id="o3o-LE-vm6"/>
+                            <constraint firstItem="R9b-4e-5j8" firstAttribute="leading" secondItem="0iy-yv-joO" secondAttribute="leading" constant="10" id="ogj-pi-cfy"/>
+                            <constraint firstItem="8Lh-Jl-8uL" firstAttribute="height" secondItem="keU-zh-dKm" secondAttribute="height" id="pjm-PB-kLy"/>
+                            <constraint firstAttribute="trailing" secondItem="keU-zh-dKm" secondAttribute="trailing" constant="10" id="sLQ-WO-VtW"/>
+                            <constraint firstAttribute="trailing" secondItem="dfn-8a-M7Y" secondAttribute="trailing" constant="10" id="uKJ-9j-3RE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="btn_array" destination="oQg-Sm-knT" id="oJ8-n7-o5M"/>
+                        <outletCollection property="btn_array" destination="96m-Dv-R0z" id="Y9F-vM-llq"/>
+                        <outletCollection property="btn_array" destination="dfn-8a-M7Y" id="8xf-E3-Xaa"/>
+                        <outletCollection property="btn_array" destination="pBL-1k-XHF" id="bo9-Ug-dof"/>
+                        <outletCollection property="btn_array" destination="R9b-4e-5j8" id="Ph5-j5-5jg"/>
+                        <outletCollection property="btn_array" destination="keU-zh-dKm" id="eBr-lg-hKS"/>
+                        <outletCollection property="btn_array" destination="5l2-Ii-oqk" id="YQ8-95-Z8M"/>
+                        <outletCollection property="btn_array" destination="8Lh-Jl-8uL" id="9f4-Pq-qbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjC-8u-QzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9094" y="732"/>
+        </scene>
         <!--ProgressHUD View Controller-->
         <scene sceneID="C4z-ff-TR7">
             <objects>
@@ -910,4 +1055,8 @@
             <point key="canvasLocation" x="5067" y="2741"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hongbao_gudong" width="172" height="58"/>
+        <image name="hongbao_gudong_color" width="172" height="58"/>
+    </resources>
 </document>

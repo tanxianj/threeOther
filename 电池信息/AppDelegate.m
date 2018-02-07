@@ -26,7 +26,8 @@
      MLTransitionGestureRecognizerTypeScreenEdgePan //屏幕边缘
      MLTransitionGestureRecognizerTypePan //屏幕内
      */
-     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
+    [self  changeNetWoking];
+//     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
 #if defined(DEBUG)||defined(_DEBUG)
     [[JPFPSStatus sharedInstance] close];
     [[JPFPSStatus sharedInstance] open];
@@ -35,6 +36,30 @@
     return YES;
 }
 
+-(void)changeNetWoking{
+    [[AFNetworkReachabilityManager sharedManager]setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        if (self.BackNetWorking) {
+            self.BackNetWorking(status);
+//        }
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                XJLog(@"未知网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                XJLog(@"WIFI网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                XJLog(@"4G网络");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                XJLog(@"没有网络");
+                break;
+            default:
+                break;
+        }
+    }];
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

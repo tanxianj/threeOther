@@ -7,9 +7,9 @@
 //
 
 #import "Super_ViewController.h"
-
+#import "AppDelegate.h"
 @interface Super_ViewController ()
-
+@property (nonatomic,strong)UILabel *lab;
 @end
 
 @implementation Super_ViewController
@@ -24,13 +24,48 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-   
+    self.fd_interactivePopDisabled = NO;//是否禁用全屏返回pop
+    self.fd_prefersNavigationBarHidden = NO;//是否禁用全屏返回模态
     [self SetNavOther];
     [self addView];
     [self initconstraint];
     
+//    [self.lab mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.view.window);
+//        make.height.offset(20);
+//        make.left.equalTo(self.view.window.mas_left).offset(100);
+//    }];
     [self.navigationController setNavigationBarHidden:[self HiddenNavView] animated:YES];
-    
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    delegate.BackNetWorking = ^(NSInteger status){
+        NSString *str ;
+        switch (status) {
+            case 0:
+                str = @"没有网络";
+                break;
+            case 1:
+                str = @"4G网络";
+                break;
+            case 2:
+                str = @"Wifi网络";
+                break;
+            default:
+                
+                break;
+        }
+        self.lab.text = str;
+        [self.view.window addSubview:self.lab];
+        
+    };
+}
+
+-(UILabel *)lab{
+    if (!_lab) {
+        _lab=[UILabel LableInitWith:@"" LabFontSize:12.0 textColor:[UIColor redColor] textAlignment:NSTextAlignmentCenter];
+        _lab.frame = CGRectMake(80, 0, 100, 20);
+//        _lab.backgroundColor = [UIColor blueColor];
+    }
+    return _lab;
 }
 -(void)ShowTopLine{
     self.topLine = [UIView new];
