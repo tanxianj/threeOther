@@ -10,7 +10,7 @@
 #import "ViewRadioTool.h"
 #import <TXJAllTools/AllTools.h>
 #import "UIColor+APPcolor.h"
-@interface RadioViewController (){
+@interface RadioViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UIButton *openset,*btnbackgroungcolor;
 }
 
@@ -49,6 +49,8 @@
     [self.view addSubview:openset];
     UITableView *tabview = [[UITableView alloc]initWithFrame:CGRectMake(10, 200, __kWidth-20, 100)];
     tabview.backgroundColor = [UIColor redColor];
+//    tabview.delegate = self;
+//    tabview.dataSource = self;
     [ViewRadioTool ViewRadioWith:tabview RadioViewWithBouns:tabview.bounds radio:30.0 RectCornerType:UIRectCornerTopRight|UIRectCornerTopLeft];
     [self.view addSubview:tabview];
     ///
@@ -148,6 +150,18 @@
      著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
      */
     
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 30;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellid"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellid"];
+        
+    }
+    cell.textLabel.text =@"11";
+    return cell;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

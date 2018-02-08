@@ -452,7 +452,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-Sm-knT">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-Sm-knT">
                                 <rect key="frame" x="10" y="30" width="170" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="RjQ-ci-3ln"/>
@@ -466,7 +466,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="uKx-vA-m9R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96m-Dv-R0z">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96m-Dv-R0z">
                                 <rect key="frame" x="10" y="97" width="170" height="57"/>
                                 <state key="normal" image="hongbao_gudong"/>
                                 <state key="selected" image="hongbao_gudong_color"/>
@@ -474,7 +474,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="OeS-LM-coj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-8a-M7Y">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-8a-M7Y">
                                 <rect key="frame" x="195" y="30" width="170" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="QIH-uF-Ulk"/>
@@ -488,7 +488,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="FWe-Rw-ClK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-1k-XHF">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-1k-XHF">
                                 <rect key="frame" x="195" y="97" width="170" height="57"/>
                                 <state key="normal" image="hongbao_gudong"/>
                                 <state key="selected" image="hongbao_gudong_color"/>
@@ -496,7 +496,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="kDp-mk-f3E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-4e-5j8">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-4e-5j8">
                                 <rect key="frame" x="10" y="164" width="170" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="AjO-lr-CWT"/>
@@ -510,7 +510,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="ASp-iw-URx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-Ii-oqk">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-Ii-oqk">
                                 <rect key="frame" x="10" y="231" width="170" height="57"/>
                                 <state key="normal" image="hongbao_gudong"/>
                                 <state key="selected" image="hongbao_gudong_color"/>
@@ -518,7 +518,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="RH6-pc-do9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keU-zh-dKm">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keU-zh-dKm">
                                 <rect key="frame" x="195" y="164" width="170" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="2vL-fh-hmr"/>
@@ -532,7 +532,7 @@
                                     <action selector="btnsectAction:" destination="iq0-Fj-aS3" eventType="touchUpInside" id="1Dj-4X-Egl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lh-Jl-8uL">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lh-Jl-8uL">
                                 <rect key="frame" x="195" y="231" width="170" height="57"/>
                                 <state key="normal" image="hongbao_gudong"/>
                                 <state key="selected" image="hongbao_gudong_color"/>
@@ -583,7 +583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CjC-8u-QzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9094" y="732"/>
+            <point key="canvasLocation" x="3582" y="808"/>
         </scene>
         <!--ProgressHUD View Controller-->
         <scene sceneID="C4z-ff-TR7">

@@ -25,10 +25,15 @@
 - (IBAction)btnsectAction:(UIButton *)sender {
     if (sender.selected) {
         sender.selected = NO;
+        XJLog(@"取消选中 --- %li",sender.tag);
     }else{
         for (UIButton *btn in self.btn_array) {
-           
-                btn.selected = (btn == sender);
+            
+                btn.selected = (btn==sender);
+            
+            if (btn.selected) {
+                XJLog(@"选中 --- %li",btn.tag);
+            }
             
         }
     }

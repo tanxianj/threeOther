@@ -20,6 +20,7 @@
 #import "GoodsViewController.h"
 #import "UpimageArrayViewController.h"
 #import "BUttonViewContorller.h"
+#import "UItableViewinsets.h"
 
 
 
@@ -246,6 +247,11 @@
         }
             
             break;
+        case 27:{
+            UItableViewinsets *tab = [[UItableViewinsets alloc]init];
+            [self.navigationController pushViewController:tab animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -253,7 +259,7 @@
 
 -(NSArray *)arry_title{
     if (!_arry_title) {
-        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"分组排序",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态"];
+        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"分组排序",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移"];
     }
     return _arry_title;
 }

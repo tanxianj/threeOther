@@ -69,6 +69,7 @@
 		362DE56B20037C630052975C /* xx.png in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56520037C620052975C /* xx.png */; };
 		362DE56C20037C630052975C /* TableViewCellfwb.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56720037C630052975C /* TableViewCellfwb.xib */; };
 		36501692202AF31C00DBCBBD /* BUttonViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501691202AF31C00DBCBBD /* BUttonViewContorller.m */; };
+		36501696202B071A00DBCBBD /* UItableViewinsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501695202B071A00DBCBBD /* UItableViewinsets.m */; };
 		366C280B20245E9900925B49 /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 366C280920245E9800925B49 /* HTTPSessionManager.m */; };
 		36841F312024411900874413 /* GETback.m in Sources */ = {isa = PBXBuildFile; fileRef = 36841F302024411900874413 /* GETback.m */; };
 		369F4CA52028264000CA7A89 /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CA42028264000CA7A89 /* GoodsViewController.m */; };
@@ -226,6 +227,8 @@
 		362DE56720037C630052975C /* TableViewCellfwb.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellfwb.xib; sourceTree = "<group>"; };
 		36501690202AF31C00DBCBBD /* BUttonViewContorller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUttonViewContorller.h; sourceTree = "<group>"; };
 		36501691202AF31C00DBCBBD /* BUttonViewContorller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUttonViewContorller.m; sourceTree = "<group>"; };
+		36501694202B071A00DBCBBD /* UItableViewinsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UItableViewinsets.h; sourceTree = "<group>"; };
+		36501695202B071A00DBCBBD /* UItableViewinsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UItableViewinsets.m; sourceTree = "<group>"; };
 		366C280920245E9800925B49 /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
 		366C280A20245E9900925B49 /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
 		36841F2F2024411900874413 /* GETback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GETback.h; sourceTree = "<group>"; };
@@ -436,6 +439,7 @@
 		046762361FCD461200FEA6B5 /* 电池信息 */ = {
 			isa = PBXGroup;
 			children = (
+				36501693202B06E600DBCBBD /* UITableView偏移 */,
 				3650168C202AF22600DBCBBD /* 按钮选中 */,
 				369F4CB720297C0800CA7A89 /* 多图上传 */,
 				369F4CA22028261E00CA7A89 /* 商品列表 */,
@@ -814,6 +818,15 @@
 			path = "按钮选中";
 			sourceTree = "<group>";
 		};
+		36501693202B06E600DBCBBD /* UITableView偏移 */ = {
+			isa = PBXGroup;
+			children = (
+				36501694202B071A00DBCBBD /* UItableViewinsets.h */,
+				36501695202B071A00DBCBBD /* UItableViewinsets.m */,
+			);
+			path = "UITableView偏移";
+			sourceTree = "<group>";
+		};
 		366C27D020245A6B00925B49 /* ZXPUnicode */ = {
 			isa = PBXGroup;
 			children = (
@@ -1153,6 +1166,7 @@
 				0467623C1FCD461200FEA6B5 /* ViewController.m in Sources */,
 				04E098F61FD6301A00DAF04A /* Cell_showAllViewController.m in Sources */,
 				04E098A91FD5326A00DAF04A /* UITableView_hegiht_ViewController.m in Sources */,
+				36501696202B071A00DBCBBD /* UItableViewinsets.m in Sources */,
 				369F4CA92028265700CA7A89 /* googsTableViewCell.m in Sources */,
 				0431B6661FD785E100007426 /* pubuliuLayout.m in Sources */,
 				362D3440201859FF0070D2F4 /* PayView.m in Sources */,
