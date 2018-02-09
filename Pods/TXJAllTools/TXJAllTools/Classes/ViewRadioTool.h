@@ -14,10 +14,10 @@
  设置某个视图的部分圆角
 
  @param viewmodel 要设置的视图
- @param rect 视图大小
  @param radiosize 圆角大小
  @param UIRectCornerTopLeft 需要设置圆角的角
  */
-+(void)ViewRadioWith:(UIView *)viewmodel RadioViewWithBouns:(CGRect)rect radio:(CGFloat)radiosize RectCornerType:(UIRectCorner)UIRectCornerTopLeft;
-
++(void)ViewRadioWith:(UIView *)viewmodel radio:(CGFloat)radiosize RectCornerType:(UIRectCorner)UIRectCornerTopLeft;
++(void)ViewRadioWith:(UIView *)viewmodel addRoundedCorners:(UIRectCorner)corners
+           withRadii:(CGFloat)radii;
 @end

@@ -70,6 +70,10 @@
 		362DE56C20037C630052975C /* TableViewCellfwb.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56720037C630052975C /* TableViewCellfwb.xib */; };
 		36501692202AF31C00DBCBBD /* BUttonViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501691202AF31C00DBCBBD /* BUttonViewContorller.m */; };
 		36501696202B071A00DBCBBD /* UItableViewinsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501695202B071A00DBCBBD /* UItableViewinsets.m */; };
+		36501699202C2B2800DBCBBD /* shake_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36501697202C2B2700DBCBBD /* shake_end.mp3 */; };
+		3650169A202C2B2800DBCBBD /* shake_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36501698202C2B2800DBCBBD /* shake_start.mp3 */; };
+		3650169E202C2B4F00DBCBBD /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3650169D202C2B4F00DBCBBD /* MusicViewController.m */; };
+		365016A0202C3A3F00DBCBBD /* Thinking Out Loud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3650169F202C3A3F00DBCBBD /* Thinking Out Loud.mp3 */; };
 		366C280B20245E9900925B49 /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 366C280920245E9800925B49 /* HTTPSessionManager.m */; };
 		36841F312024411900874413 /* GETback.m in Sources */ = {isa = PBXBuildFile; fileRef = 36841F302024411900874413 /* GETback.m */; };
 		369F4CA52028264000CA7A89 /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369F4CA42028264000CA7A89 /* GoodsViewController.m */; };
@@ -229,6 +233,11 @@
 		36501691202AF31C00DBCBBD /* BUttonViewContorller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUttonViewContorller.m; sourceTree = "<group>"; };
 		36501694202B071A00DBCBBD /* UItableViewinsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UItableViewinsets.h; sourceTree = "<group>"; };
 		36501695202B071A00DBCBBD /* UItableViewinsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UItableViewinsets.m; sourceTree = "<group>"; };
+		36501697202C2B2700DBCBBD /* shake_end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shake_end.mp3; sourceTree = "<group>"; };
+		36501698202C2B2800DBCBBD /* shake_start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shake_start.mp3; sourceTree = "<group>"; };
+		3650169C202C2B4F00DBCBBD /* MusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		3650169D202C2B4F00DBCBBD /* MusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		3650169F202C3A3F00DBCBBD /* Thinking Out Loud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Thinking Out Loud.mp3"; sourceTree = "<group>"; };
 		366C280920245E9800925B49 /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
 		366C280A20245E9900925B49 /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
 		36841F2F2024411900874413 /* GETback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GETback.h; sourceTree = "<group>"; };
@@ -439,42 +448,15 @@
 		046762361FCD461200FEA6B5 /* 电池信息 */ = {
 			isa = PBXGroup;
 			children = (
-				36501693202B06E600DBCBBD /* UITableView偏移 */,
-				3650168C202AF22600DBCBBD /* 按钮选中 */,
-				369F4CB720297C0800CA7A89 /* 多图上传 */,
-				369F4CA22028261E00CA7A89 /* 商品列表 */,
-				360D2E132021547B0061A4ED /* 列表删除 */,
-				360D2E0B202068710061A4ED /* 部分圆角 */,
-				36E1F8FD201EEB9D00227FA9 /* 评价列表 */,
-				362D3454201979850070D2F4 /* 商品评价 */,
-				362D3441201861960070D2F4 /* Tool */,
-				362D343D201859CD0070D2F4 /* 支付 */,
 				043C6E8B1FD14F0C00994B74 /* 首页 */,
-				36F320A62018157A0072ACFD /* NavCollectionView */,
-				36F320972016D9EA0072ACFD /* CALayer */,
-				361F5B1E2015C1920098A3AD /* 网格 */,
-				36CEE9FE200EEEF2009DACC0 /* 网页加载进度 */,
-				36CEE9F4200EE345009DACC0 /* 协议 */,
-				362DE56020037C490052975C /* 富文本 */,
-				0431B65D1FD77FB600007426 /* 瀑布流 */,
-				0431B6591FD685BB00007426 /* MBProgressHUD+JDragon */,
-				04E099031FD6513C00DAF04A /* HUD */,
-				04E098FC1FD64BF000DAF04A /* YJProgressHUD */,
-				04E098F31FD62FEF00DAF04A /* cell点击展示更多 */,
-				04E098B11FD5451700DAF04A /* Cell折叠效果 */,
-				04E098A61FD5323F00DAF04A /* UITabview自适应高度 */,
-				0461937C1FD51BA40074B19F /* Storyboard传值 */,
-				043C6E8E1FD4EC3E00994B74 /* 自定义返回按钮保留系统返回手势 */,
-				043C6E871FD14ECB00994B74 /* SDCycleScrollView */,
-				04A5C5CA1FD12E3F00CDF939 /* 表格清空解决办法 */,
-				04A5C5C91FD12E2E00CDF939 /* Model */,
-				04A5C5C81FD12E1D00CDF939 /* Boolk回调 */,
-				046762371FCD461200FEA6B5 /* AppDelegate.h */,
-				046762381FCD461200FEA6B5 /* AppDelegate.m */,
+				3649CB4A202D3817009F4C46 /* 子页面 */,
+				362D3441201861960070D2F4 /* Tool */,
 				361F5ABC2015795C0098A3AD /* View重写 */,
 				3692EC5B2011C6D2008C5923 /* ZPScreenAdaptation.h */,
 				366C27D020245A6B00925B49 /* ZXPUnicode */,
 				36841F2B20243FCF00874413 /* New Group */,
+				046762371FCD461200FEA6B5 /* AppDelegate.h */,
+				046762381FCD461200FEA6B5 /* AppDelegate.m */,
 				36CEE9F1200DC9D0009DACC0 /* UIWindow+Motion.h */,
 				36CEE9F2200DC9D1009DACC0 /* UIWindow+Motion.m */,
 				0467623D1FCD461200FEA6B5 /* Main.storyboard */,
@@ -809,6 +791,42 @@
 			path = "富文本";
 			sourceTree = "<group>";
 		};
+		3649CB4A202D3817009F4C46 /* 子页面 */ = {
+			isa = PBXGroup;
+			children = (
+				3650169B202C2B3100DBCBBD /* 本地音乐播放 */,
+				36501693202B06E600DBCBBD /* UITableView偏移 */,
+				3650168C202AF22600DBCBBD /* 按钮选中 */,
+				369F4CB720297C0800CA7A89 /* 多图上传 */,
+				369F4CA22028261E00CA7A89 /* 商品列表 */,
+				360D2E132021547B0061A4ED /* 列表删除 */,
+				360D2E0B202068710061A4ED /* 部分圆角 */,
+				36E1F8FD201EEB9D00227FA9 /* 评价列表 */,
+				362D3454201979850070D2F4 /* 商品评价 */,
+				362D343D201859CD0070D2F4 /* 支付 */,
+				36F320A62018157A0072ACFD /* NavCollectionView */,
+				36F320972016D9EA0072ACFD /* CALayer */,
+				361F5B1E2015C1920098A3AD /* 网格 */,
+				36CEE9FE200EEEF2009DACC0 /* 网页加载进度 */,
+				36CEE9F4200EE345009DACC0 /* 协议 */,
+				362DE56020037C490052975C /* 富文本 */,
+				0431B65D1FD77FB600007426 /* 瀑布流 */,
+				0431B6591FD685BB00007426 /* MBProgressHUD+JDragon */,
+				04E099031FD6513C00DAF04A /* HUD */,
+				04E098FC1FD64BF000DAF04A /* YJProgressHUD */,
+				04E098F31FD62FEF00DAF04A /* cell点击展示更多 */,
+				04E098B11FD5451700DAF04A /* Cell折叠效果 */,
+				04E098A61FD5323F00DAF04A /* UITabview自适应高度 */,
+				0461937C1FD51BA40074B19F /* Storyboard传值 */,
+				043C6E8E1FD4EC3E00994B74 /* 自定义返回按钮保留系统返回手势 */,
+				043C6E871FD14ECB00994B74 /* SDCycleScrollView */,
+				04A5C5CA1FD12E3F00CDF939 /* 表格清空解决办法 */,
+				04A5C5C91FD12E2E00CDF939 /* Model */,
+				04A5C5C81FD12E1D00CDF939 /* Boolk回调 */,
+			);
+			path = "子页面";
+			sourceTree = "<group>";
+		};
 		3650168C202AF22600DBCBBD /* 按钮选中 */ = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +843,18 @@
 				36501695202B071A00DBCBBD /* UItableViewinsets.m */,
 			);
 			path = "UITableView偏移";
+			sourceTree = "<group>";
+		};
+		3650169B202C2B3100DBCBBD /* 本地音乐播放 */ = {
+			isa = PBXGroup;
+			children = (
+				3650169C202C2B4F00DBCBBD /* MusicViewController.h */,
+				3650169D202C2B4F00DBCBBD /* MusicViewController.m */,
+				3650169F202C3A3F00DBCBBD /* Thinking Out Loud.mp3 */,
+				36501697202C2B2700DBCBBD /* shake_end.mp3 */,
+				36501698202C2B2800DBCBBD /* shake_start.mp3 */,
+			);
+			path = "本地音乐播放";
 			sourceTree = "<group>";
 		};
 		366C27D020245A6B00925B49 /* ZXPUnicode */ = {
@@ -1066,6 +1096,7 @@
 				04E098B01FD5342600DAF04A /* UITable_height_TableViewCell.xib in Resources */,
 				362D344D20186AC70070D2F4 /* payCell.xib in Resources */,
 				0431B66B1FD7892900007426 /* Pubuliu_CollectionViewCell.xib in Resources */,
+				365016A0202C3A3F00DBCBBD /* Thinking Out Loud.mp3 in Resources */,
 				36F3209D2016E1CC0072ACFD /* scan_line@3x.png in Resources */,
 				362D347A2019C2620070D2F4 /* 3.jpeg in Resources */,
 				362DE56820037C630052975C /* CYLoLi.png in Resources */,
@@ -1074,7 +1105,9 @@
 				04A5C5D41FD12FC300CDF939 /* tab_qk_TableViewCell.xib in Resources */,
 				362D347C2019C2620070D2F4 /* 5.jpeg in Resources */,
 				362D34792019C2620070D2F4 /* 1.jpeg in Resources */,
+				3650169A202C2B2800DBCBBD /* shake_start.mp3 in Resources */,
 				0467623F1FCD461200FEA6B5 /* Main.storyboard in Resources */,
+				36501699202C2B2800DBCBBD /* shake_end.mp3 in Resources */,
 				04A5C5C41FD0FE5100CDF939 /* Model_TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1156,6 +1189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3650169E202C2B4F00DBCBBD /* MusicViewController.m in Sources */,
 				361F5B1D2015AFA40098A3AD /* Super_ViewController.m in Sources */,
 				0461937F1FD51BBC0074B19F /* Storyboard_cz_ViewController.m in Sources */,
 				04A5C5D31FD12FC300CDF939 /* tab_qk_TableViewCell.m in Sources */,

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellid" rowHeight="190" id="KGk-i7-Jjw" customClass="goodsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_icon_alipay" translatesAutoresizingMaskIntoConstraints="NO" id="oug-sH-Cky">
+                        <rect key="frame" x="12" y="12" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="6mT-7c-9Y2"/>
+                            <constraint firstAttribute="height" constant="50" id="D5S-wW-5FI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqP-4m-3vt">
+                        <rect key="frame" x="72" y="10" width="280" height="72"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-3f-WYv">
+                        <rect key="frame" x="72" y="92" width="280" height="87.5"/>
+                        <color key="backgroundColor" red="0.054901960780000002" green="0.74901960779999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4zG-3f-WYv" firstAttribute="leading" secondItem="oug-sH-Cky" secondAttribute="trailing" constant="10" id="0Ej-6o-VSI"/>
+                    <constraint firstItem="OqP-4m-3vt" firstAttribute="leading" secondItem="oug-sH-Cky" secondAttribute="trailing" constant="10" id="2w6-wb-fl2"/>
+                    <constraint firstItem="oug-sH-Cky" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="3OE-79-MYY"/>
+                    <constraint firstAttribute="bottom" secondItem="4zG-3f-WYv" secondAttribute="bottom" constant="10" id="4RJ-ZN-0Ye"/>
+                    <constraint firstItem="4zG-3f-WYv" firstAttribute="top" secondItem="OqP-4m-3vt" secondAttribute="bottom" constant="10" id="F30-lu-Ud4"/>
+                    <constraint firstItem="oug-sH-Cky" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="JYa-mq-9rJ"/>
+                    <constraint firstAttribute="trailing" secondItem="4zG-3f-WYv" secondAttribute="trailing" constant="10" id="ugL-3f-7vk"/>
+                    <constraint firstAttribute="trailing" secondItem="OqP-4m-3vt" secondAttribute="trailing" constant="10" id="yY3-Cc-Jhf"/>
+                    <constraint firstItem="OqP-4m-3vt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zlC-Rd-1xg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsimg" destination="4zG-3f-WYv" id="dXg-S5-3hy"/>
+                <outlet property="headerimg" destination="oug-sH-Cky" id="sn4-t5-T2N"/>
+                <outlet property="other" destination="OqP-4m-3vt" id="yqQ-SU-CFc"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="127"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pay_icon_alipay" width="20" height="20"/>
+    </resources>
+</document>

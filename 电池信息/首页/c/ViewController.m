@@ -21,6 +21,7 @@
 #import "UpimageArrayViewController.h"
 #import "BUttonViewContorller.h"
 #import "UItableViewinsets.h"
+#import "MusicViewController.h"
 
 
 
@@ -101,7 +102,7 @@
     switch (indexPath.row) {
         case 0:{
             
-            ViewController_boolk *vim_boolk=[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"boolk_v"];
+            ViewController_boolk *vim_boolk=[TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"boolk_v"];
             vim_boolk.Get_lab=^(NSString *str){
 //                self.title = str.length>0?str:@"第三方相关";
             };
@@ -111,81 +112,81 @@
     
         case 1:{
             
-            Model_ViewController *model_v = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"model_v"];
+            Model_ViewController *model_v = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"model_v"];
             [self.navigationController pushViewController:model_v animated:YES];
             }
             break;
         case 2:{
             
-            Tab_qk_ViewController *tab_qk = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"qk_v"];
+            Tab_qk_ViewController *tab_qk = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"qk_v"];
             [self.navigationController pushViewController:tab_qk animated:YES];
             }
             break;
         case 3:{
             
-            SDCycleScrollViewController *sdc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"sdc_v"];
+            SDCycleScrollViewController *sdc = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"sdc_v"];
             [self.navigationController pushViewController:sdc animated:YES];
         }
             break;
         case 4:{
-            GoBack_ViewController *goback = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"goback"];
+            GoBack_ViewController *goback = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"goback"];
             [self.navigationController pushViewController:goback animated:YES];
             
         }
             break;
         case 5:{
-            Storyboard_cz_ViewController *strcz = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"stcz"];
+            Storyboard_cz_ViewController *strcz = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"stcz"];
             [self.navigationController pushViewController:strcz animated:YES];
         }
             break;
         case 6:{
-            UITableView_hegiht_ViewController *tab_height = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"tab_height"];
+            UITableView_hegiht_ViewController *tab_height = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"tab_height"];
             [self.navigationController pushViewController:tab_height animated:YES];
             
         }
             break;
         case 7:{
-            Cell_zdViewController *cell_open = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"cell_zd"];
+            Cell_zdViewController *cell_open = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"cell_zd"];
             [self.navigationController pushViewController:cell_open animated:YES];
         }
             break;
         case 8:{
-            Cell_showAllViewController *cellshow = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"cell_show"];
+            Cell_showAllViewController *cellshow = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"cell_show"];
             [self.navigationController pushViewController:cellshow animated:YES];
         }
             break;
         case 9:{
-            YJProgressHUD_ViewController * yjhud =[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"yjhud"];
+            YJProgressHUD_ViewController * yjhud =[TXJUIStoryboard instantiateViewControllerWithIdentifier:@"yjhud"];
             [self.navigationController pushViewController:yjhud animated:YES];
         }
             break;
         case 10:{
-            FirstViewController *mbjd = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"mbjd"];
+            FirstViewController *mbjd = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"mbjd"];
             [self.navigationController pushViewController:mbjd animated:YES];
         }
             break;
         case 11:{
-            Pubuliu_ViewController *pubuliu = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"pubuliu"];
+            Pubuliu_ViewController *pubuliu = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"pubuliu"];
             [self.navigationController pushViewController:pubuliu animated:YES];
         }
             break;
         case 12:{
-            ViewController *fwb = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"fwb"];
+            ViewController *fwb = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"fwb"];
             [self.navigationController pushViewController:fwb animated:YES];
         }
             break;
         case 13:{
-            XieyiViewController *xieyi = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"xiyi1"];
+            XieyiViewController *xieyi = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"xiyi1"];
             [self.navigationController pushViewController:xieyi animated:YES];
         }
             break;
         case 14:{
-            WebLoadingViewController *xieyi = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"web"];
+            WebLoadingViewController *xieyi = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"web"];
             [self.navigationController pushViewController:xieyi animated:YES];
         }
             break;
         case 15:{
-            View_tool_ViewController *view_tool = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"view_tool"];
+            View_tool_ViewController *view_tool = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"view_tool"];
             [self.navigationController pushViewController:view_tool animated:YES];
         }
             break;
@@ -222,8 +223,7 @@
         }
             break;
         case 22:{
-//            FZPXViewController *fzpx = [[FZPXViewController alloc]init];
-//            [self.navigationController pushViewController:fzpx animated:YES];
+            
         }
             break;
         case 23:{
@@ -242,7 +242,7 @@
         }
             break;
         case 26:{
-            BUttonViewContorller *button = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"buttonsect"];
+            BUttonViewContorller *button = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"buttonsect"];
             [self.navigationController pushViewController:button animated:YES];
         }
             
@@ -252,6 +252,12 @@
             [self.navigationController pushViewController:tab animated:YES];
         }
             break;
+            case 28:
+        {
+             MusicViewController *music = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"music"];
+            [self.navigationController pushViewController:music animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -259,7 +265,7 @@
 
 -(NSArray *)arry_title{
     if (!_arry_title) {
-        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"分组排序",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移"];
+        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放"];
     }
     return _arry_title;
 }
