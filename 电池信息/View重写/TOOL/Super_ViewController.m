@@ -37,7 +37,7 @@
 //        make.left.equalTo(self.view.window.mas_left).offset(100);
 //    }];
     [self.navigationController setNavigationBarHidden:[self HiddenNavView] animated:YES];
-    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    AppDelegate *delegate =(AppDelegate *) [UIApplication sharedApplication].delegate;
     delegate.BackNetWorking = ^(NSInteger status){
         NSString *str ;
         switch (status) {

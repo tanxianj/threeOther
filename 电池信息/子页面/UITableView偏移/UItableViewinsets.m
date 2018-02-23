@@ -8,7 +8,8 @@
 
 #import "UItableViewinsets.h"
 #import <TXJAllTools/ViewRadioTool.h>
-
+#import "UIView+LSCore.h"
+#import "GrabRedTableView.h"
 @interface UItableViewinsets ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 
@@ -22,6 +23,8 @@
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor greenColor];
     [self.view addSubview:self.tableView];;
+    self.tableView.frame = CGRectMake(0, 50, __kWidth, __kHeight-114);
+    /*
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.equalTo(self.view);
         make.left.equalTo(self.view).offset(10);
@@ -29,6 +32,8 @@
         make.top.equalTo(self.view).offset(100);
 
     }];
+     */
+
     UIView *viewbgv = [[UIView alloc]initWithFrame:self.tableView.bounds];
     viewbgv.backgroundColor = [UIColor clearColor];
     [self.tableView setBackgroundView:viewbgv];
@@ -61,19 +66,19 @@
 }
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc]init];
+        _tableView = [[GrabRedTableView alloc]init];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor whiteColor];
         UIView *headerView = [UIView new];
-        headerView.frame = CGRectMake(0, 0, __kWidth-20, 50);
+        headerView.frame = CGRectMake(0, 0, __kWidth, 50);
         headerView.backgroundColor = [UIColor blueColor];
-        [ViewRadioTool ViewRadioWith:headerView radio:30 RectCornerType:UIRectCornerTopLeft|UIRectCornerTopRight];
-        _tableView.tableHeaderView =headerView;
+//        [ViewRadioTool ViewRadioWith:headerView radio:30 RectCornerType:UIRectCornerTopLeft|UIRectCornerTopRight];
+        _tableView.tableHeaderView = headerView;
         _tableView.contentInset = UIEdgeInsetsMake(200, 0, 0, 0);
-        [ViewRadioTool ViewRadioWith:_tableView addRoundedCorners:UIRectCornerTopRight|UIRectCornerTopLeft withRadii:30];
+        
         [_tableView setContentOffset:CGPointMake(0, -200)];
-//        [_tableView setContentSize:CGSizeMake(__kWidth, __kHeight)];
+
     }
     return _tableView;
 }

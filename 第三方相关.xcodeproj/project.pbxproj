@@ -68,6 +68,8 @@
 		362DE56A20037C630052975C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 362DE56420037C620052975C /* ViewController2.m */; };
 		362DE56B20037C630052975C /* xx.png in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56520037C620052975C /* xx.png */; };
 		362DE56C20037C630052975C /* TableViewCellfwb.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362DE56720037C630052975C /* TableViewCellfwb.xib */; };
+		3649CB50202D3EC0009F4C46 /* UIView+LSCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3649CB4F202D3EC0009F4C46 /* UIView+LSCore.m */; };
+		3649CB53202D4297009F4C46 /* GrabRedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3649CB52202D4297009F4C46 /* GrabRedTableView.m */; };
 		36501692202AF31C00DBCBBD /* BUttonViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501691202AF31C00DBCBBD /* BUttonViewContorller.m */; };
 		36501696202B071A00DBCBBD /* UItableViewinsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 36501695202B071A00DBCBBD /* UItableViewinsets.m */; };
 		36501699202C2B2800DBCBBD /* shake_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36501697202C2B2700DBCBBD /* shake_end.mp3 */; };
@@ -229,6 +231,10 @@
 		362DE56520037C620052975C /* xx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx.png; sourceTree = "<group>"; };
 		362DE56620037C630052975C /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		362DE56720037C630052975C /* TableViewCellfwb.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellfwb.xib; sourceTree = "<group>"; };
+		3649CB4E202D3EBF009F4C46 /* UIView+LSCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSCore.h"; sourceTree = "<group>"; };
+		3649CB4F202D3EC0009F4C46 /* UIView+LSCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSCore.m"; sourceTree = "<group>"; };
+		3649CB51202D4297009F4C46 /* GrabRedTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrabRedTableView.h; sourceTree = "<group>"; };
+		3649CB52202D4297009F4C46 /* GrabRedTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrabRedTableView.m; sourceTree = "<group>"; };
 		36501690202AF31C00DBCBBD /* BUttonViewContorller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUttonViewContorller.h; sourceTree = "<group>"; };
 		36501691202AF31C00DBCBBD /* BUttonViewContorller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUttonViewContorller.m; sourceTree = "<group>"; };
 		36501694202B071A00DBCBBD /* UItableViewinsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UItableViewinsets.h; sourceTree = "<group>"; };
@@ -457,6 +463,8 @@
 				36841F2B20243FCF00874413 /* New Group */,
 				046762371FCD461200FEA6B5 /* AppDelegate.h */,
 				046762381FCD461200FEA6B5 /* AppDelegate.m */,
+				3649CB4E202D3EBF009F4C46 /* UIView+LSCore.h */,
+				3649CB4F202D3EC0009F4C46 /* UIView+LSCore.m */,
 				36CEE9F1200DC9D0009DACC0 /* UIWindow+Motion.h */,
 				36CEE9F2200DC9D1009DACC0 /* UIWindow+Motion.m */,
 				0467623D1FCD461200FEA6B5 /* Main.storyboard */,
@@ -841,6 +849,8 @@
 			children = (
 				36501694202B071A00DBCBBD /* UItableViewinsets.h */,
 				36501695202B071A00DBCBBD /* UItableViewinsets.m */,
+				3649CB51202D4297009F4C46 /* GrabRedTableView.h */,
+				3649CB52202D4297009F4C46 /* GrabRedTableView.m */,
 			);
 			path = "UITableView偏移";
 			sourceTree = "<group>";
@@ -1189,12 +1199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3649CB50202D3EC0009F4C46 /* UIView+LSCore.m in Sources */,
 				3650169E202C2B4F00DBCBBD /* MusicViewController.m in Sources */,
 				361F5B1D2015AFA40098A3AD /* Super_ViewController.m in Sources */,
 				0461937F1FD51BBC0074B19F /* Storyboard_cz_ViewController.m in Sources */,
 				04A5C5D31FD12FC300CDF939 /* tab_qk_TableViewCell.m in Sources */,
 				360D2E0E202068940061A4ED /* RadioViewController.m in Sources */,
 				0431B6581FD67D2200007426 /* MJProgressHUD.m in Sources */,
+				3649CB53202D4297009F4C46 /* GrabRedTableView.m in Sources */,
 				0431B66A1FD7892900007426 /* Pubuliu_CollectionViewCell.m in Sources */,
 				369F4CAF202951BE00CA7A89 /* UIImageView+LoadImage.m in Sources */,
 				0467623C1FCD461200FEA6B5 /* ViewController.m in Sources */,
