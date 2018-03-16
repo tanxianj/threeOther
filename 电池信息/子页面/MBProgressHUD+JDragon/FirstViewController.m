@@ -55,7 +55,7 @@
 {
     switch (indexPath.row) {
         case 0:
-            [MBProgressHUD showActivityMessageInWindow:nil];
+            [MBProgressHUD showActivityMessageInWindow:@"啊哈哈哈哈" timer:10];
             break;
         case 1:
             [MBProgressHUD showActivityMessageInView:nil];

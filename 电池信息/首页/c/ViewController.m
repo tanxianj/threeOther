@@ -35,7 +35,20 @@
 @implementation ViewController
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
+    //        dispatch_group_t group = dispatch_group_create();
+    //        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //
+    //        dispatch_group_async(group, queue, ^{
+    //            dispatch_group_enter(group);
+    //
+    //            dispatch_group_leave(group);
+    //
+    //        });
+    //        dispatch_group_notify(group, queue, ^{
+    //            dispatch_async(dispatch_get_main_queue(), ^{
+    //
+    //            });
+    //        });
     
 }
 - (void)viewDidLoad {
@@ -48,8 +61,8 @@
     /**/
 //        [[NSRunLoop currentRunLoop] cancelPerformSelector:@selector(Timedelay) target:self argument:nil];
 //        [self.timer invalidate];
-        self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:5.0]
-                                                     interval:0 target:self selector:@selector(Timedelay) userInfo:nil repeats:NO];
+//        self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:5.0]
+//                                                     interval:0 target:self selector:@selector(Timedelay) userInfo:nil repeats:NO];
 //        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     
 }

@@ -38,12 +38,13 @@
     //
     
 //    [ViewRadioTool ViewRadioWith:viewnew radio:30.0 RectCornerType:UIRectCornerTopLeft|UIRectCornerTopRight|UIRectCornerBottomRight];
-    [ViewRadioTool ViewRadioWith:viewnew addRoundedCorners:UIRectCornerTopLeft|UIRectCornerTopRight|UIRectCornerBottomRight withRadii:30];
+    
+//    [ViewRadioTool ViewRadioWith:viewnew RadioViewWithBouns:viewnew.bounds radio:30.0 RectCornerType:UIRectCornerTopLeft];
     [self.view addSubview:viewnew];
     openset = [UIButton buttonWithTitle:@"前往系统设置" buttonTitleFontSize:14.0 buttonTitleColor:[UIColor whiteColor] buttonBgColor:[UIColor redColor] buttonTextAlignment:NSTextAlignmentCenter];
     openset.frame = CGRectMake(10, 150, __kWidth-20, 44);
 //    [openset buttonGradient:@[[UIColor colorWithHexString:@"FED101"],[UIColor colorWithHexString:@"FCAD00"]] buttonCGSize:CGSizeMake(__kWidth-20 ,44 ) ByGradientType:TXJDirectionTypeLeft2Right cornerRadius:YES];
-    [ViewRadioTool ViewRadioWith:openset  radio:30.0 RectCornerType:UIRectCornerTopRight|UIRectCornerTopLeft];
+//    [ViewRadioTool ViewRadioWith:openset  radio:30.0 RectCornerType:UIRectCornerTopRight|UIRectCornerTopLeft];
     
     
     [openset addTarget:self action:@selector(GotoSet) forControlEvents:UIControlEventTouchUpInside];
@@ -52,7 +53,7 @@
     tabview.backgroundColor = [UIColor redColor];
 //    tabview.delegate = self;
 //    tabview.dataSource = self;
-    [ViewRadioTool ViewRadioWith:tabview  radio:30.0 RectCornerType:UIRectCornerTopRight|UIRectCornerTopLeft];
+//    [ViewRadioTool ViewRadioWith:tabview  radio:30.0 RectCornerType:UIRectCornerTopRight|UIRectCornerTopLeft];
     [self.view addSubview:tabview];
     ///
     btnbackgroungcolor = [UIButton buttonWithTitle:@"长安改变颜色" buttonTitleFontSize:14.0 buttonTitleColor:nil buttonBgColor:nil buttonTextAlignment:NSTextAlignmentCenter];

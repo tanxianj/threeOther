@@ -96,6 +96,7 @@
     [_upBtn buttonGradient:@[[UIColor redColor],[UIColor blueColor]] buttonCGSize:CGSizeMake(__kWidth-20, 44) ByGradientType:TXJDirectionTypeLeft2Right cornerRadius:YES];
     [_upBtn addTarget:self action:@selector(upImage) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_upBtn];
+    
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     layout.itemSize = CGSizeMake(100, 100);
