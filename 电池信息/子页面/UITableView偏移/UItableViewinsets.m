@@ -46,7 +46,7 @@
 }
 
 -(void)BtnAction{
-    XJLog(@"点击事件");
+    XJLog(@"点击事件。");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
