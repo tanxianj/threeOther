@@ -22,6 +22,8 @@
 #import "BUttonViewContorller.h"
 #import "UItableViewinsets.h"
 #import "MusicViewController.h"
+#import "lianshiViewController.h"
+
 
 
 
@@ -49,22 +51,36 @@
     //
     //            });
     //        });
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
+    dispatch_group_async(group, queue, ^{
+        dispatch_group_enter(group);//开始
+        XJLog(@"哈哈1");
+        dispatch_group_leave(group);//结束
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+        });
+    });
+    dispatch_wait(group, DISPATCH_TIME_FOREVER); // 阻塞线程  DISPATCH_TIME_FOREVER group 函数不结束就不会执行后面的所有东西
+    XJLog(@"哈哈2");
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"第三方相关";
     self.tab_view.tableFooterView = [UIView new];
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self updateTimer];
-    /**/
-//        [[NSRunLoop currentRunLoop] cancelPerformSelector:@selector(Timedelay) target:self argument:nil];
-//        [self.timer invalidate];
-//        self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:5.0]
-//                                                     interval:0 target:self selector:@selector(Timedelay) userInfo:nil repeats:NO];
-//        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-    
+    /* 延迟方式二
+        [[NSRunLoop currentRunLoop] cancelPerformSelector:@selector(Timedelay) target:self argument:nil];
+        [self.timer invalidate];
+        self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:5.0]
+                                                     interval:0 target:self selector:@selector(Timedelay) userInfo:nil repeats:NO];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+     */
 }
 - (void)updateTimer {
     self.time = 4.f;
@@ -72,15 +88,27 @@
     self.timer = nil;
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
+#pragma mark - getter
+
+- (NSTimer *)timer {
+    if (!_timer) {
+        __weak typeof(self) weakSelf = self;
+        _timer = [NSTimer timerWithTimeInterval:0.1 target:weakSelf selector:@selector(changeNumberToServer) userInfo:nil repeats:YES];
+    }
+    return _timer;
+}
+
 - (void)changeNumberToServer {
     self.time -= 0.1;
     if (self.time < 0.009 && self.time > -0.009) {
        XJLog(@"ZPFlexible 4 is  %.2f",ZPFlexible(20));
     }
 }
+/* 延迟方式二
 -(void)Timedelay{
     XJLog(@"ZPFlexible 5 is  %.2f",ZPFlexible(20));
 }
+ */
 /*
 -(void)SetNavOther{
     self.title = @"第三方相关";
@@ -271,6 +299,14 @@
             [self.navigationController pushViewController:music animated:YES];
         }
             break;
+        case 29:
+        {
+            lianshiViewController *lianshi = [[lianshiViewController alloc]init];
+            [self.navigationController pushViewController:lianshi animated:YES];
+        }
+            break;
+            
+            
         default:
             break;
     }
@@ -278,18 +314,9 @@
 
 -(NSArray *)arry_title{
     if (!_arry_title) {
-        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放"];
+        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放",@"链式"];
     }
     return _arry_title;
-}
-#pragma mark - getter
-
-- (NSTimer *)timer {
-    if (!_timer) {
-        __weak typeof(self) weakSelf = self;
-        _timer = [NSTimer timerWithTimeInterval:0.1 target:weakSelf selector:@selector(changeNumberToServer) userInfo:nil repeats:YES];
-    }
-    return _timer;
 }
 
 - (void)didReceiveMemoryWarning {

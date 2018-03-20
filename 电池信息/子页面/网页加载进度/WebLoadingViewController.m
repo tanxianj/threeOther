@@ -63,6 +63,7 @@
     }
 }
 -(void)dealloc{
+    
     [self.web removeObserver:self forKeyPath:@"estimatedProgress"];
 }
 - (void)didReceiveMemoryWarning {

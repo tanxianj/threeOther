@@ -21,11 +21,17 @@
     // Override point for customization after application launch.
     [UIButton appearance].adjustsImageWhenDisabled = NO;
     [UIButton appearance].adjustsImageWhenHighlighted = NO;
+    IQKeyboardManager *manager          = [IQKeyboardManager sharedManager];
+    manager.enable                      = YES;
+    manager.shouldResignOnTouchOutside  = YES;
+    manager.enableAutoToolbar           = NO;
+    [manager registerTextFieldViewClass:[YYTextView class] didBeginEditingNotificationName:YYTextViewTextDidBeginEditingNotification didEndEditingNotificationName:YYTextViewTextDidEndEditingNotification];
     //nav 手势处理 ,
     /*
      MLTransitionGestureRecognizerTypeScreenEdgePan //屏幕边缘
      MLTransitionGestureRecognizerTypePan //屏幕内
      */
+    
     [self  changeNetWoking];
 //     [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
 #if defined(DEBUG)||defined(_DEBUG)

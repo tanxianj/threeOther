@@ -10,7 +10,7 @@
 
 @interface tab_qk_TableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *title;
-@property (weak, nonatomic) IBOutlet UITextField *text_view;
+@property (strong, nonatomic) IBOutlet UITextField *text_view;
 +(tab_qk_TableViewCell *)SetCell;
 @property(nonatomic,strong)void (^GetString)(NSString *str);
 @end

@@ -33,6 +33,11 @@
 #import <Masonry/Masonry.h>
 #import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
 #import <TZImagePickerController/TZImagePickerController.h>
+#import <JHChainableAnimations/JHChainableAnimations.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <YYText/YYText.h>
+#import <JPFPSStatus/JPFPSStatus.h>
+#import <AXAnimationChain/AXAnimationChain.h>
 //谭胖子自己的框架
 #import <TXJAllTools/AllTools.h>
 
@@ -60,8 +65,9 @@
 #import "Pubuliu_CollectionViewCell.h"
 #import "pubuliuLayout.h"
 #import "ViewController2.h"
-#import <JPFPSStatus/JPFPSStatus.h>
+
 #import "ZPScreenAdaptation.h"
+
 //TOOl
 #import "Super_ViewController.h"
 #import "CALayerViewController.h"

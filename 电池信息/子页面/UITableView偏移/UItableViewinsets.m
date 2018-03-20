@@ -7,7 +7,7 @@
 //
 
 #import "UItableViewinsets.h"
-#import <TXJAllTools/ViewRadioTool.h>
+
 #import "UIView+LSCore.h"
 #import "GrabRedTableView.h"
 @interface UItableViewinsets ()<UITableViewDelegate,UITableViewDataSource>

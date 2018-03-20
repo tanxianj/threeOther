@@ -31,20 +31,24 @@ TXJAllTools is available under the MIT license. See the LICENSE file for more in
 ## Other framework
 
 ```
-    pod 'AFNetwork', '~> 0.1.0'
+    inhibit_all_warnings! 隐藏所有pod警告
+    pod 'AFNetwork', '~> 0.1.0' ---网络请求
     #pod 'SDWebImage', '~> 4.1.0'
-    pod 'SDCycleScrollView', '~> 1.73'
-    pod 'MJExtension', '~> 3.0.13'
-    pod 'MLTransition', '~> 2.1.3'
+    pod 'SDCycleScrollView', '~> 1.73' ---滚动轮播图
+    pod 'MJExtension', '~> 3.0.13' ---model
+    pod 'FDFullscreenPopGesture' ---导航栏隐藏与各种返回
     pod 'MJRefresh', '~> 3.1.12'
     #pod 'MBProgressHUD', '~> 1.0.0'
     #pod 'YJProgressHUD', '~> 1.0.4'
     pod 'MBProgressHUD+JDragon', '~> 0.0.3'
-    pod 'FLEX', '~> 2.4.0'
-    pod 'JPFPSStatus', '~> 0.1.1'
+    pod 'FLEX', '~> 2.4.0' ---工具很有用
+    pod 'JPFPSStatus', '~> 0.1.1' ---显示FPS
     pod 'Masonry'
-    pod 'TZImagePickerController', '~> 1.9.3'
-    pod 'FDFullscreenPopGesture'
+    pod 'TZImagePickerController' ---相册图片选择
+    pod 'IQKeyboardManager' ---键盘收起
+    pod 'YYText' ---和上没一起用
+    pod 'GBDeviceInfo' ---判断当前设备型号
+    
 
 ```
 ## 格式

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface WebLoadingViewController : Super_ViewController
-@property(nonatomic,strong)NSString *url;
+@property(nonatomic,strong)NSString * _Nullable url;
 @end

@@ -53,8 +53,11 @@ CG_INLINE CGPoint ZPFlexibleFactor() {
         return CGPointMake(414.0 / 320.0, 736.0 / 568.0);
     }
     else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
         CGSize screenSize = [UIScreen mainScreen].currentMode.size;
         CGRect screenBounds = [UIScreen mainScreen].bounds;
+#pragma clang diagnostic pop
 #if DEBUG
         NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
         NSLog(@"Unknown device matchs screen size '%@'.", NSStringFromCGSize(screenSize));

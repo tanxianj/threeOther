@@ -13,10 +13,11 @@
 #import "UILabel+NewLab.h"
 #import "UIColor+Hex.h"
 //#import "ZJImageMagnification.h"
-#import "ViewRadioTool.h"
 #import "SFLabel.h"
 #import "NSArray+ZXPUnicode.h"
 #import "NSDictionary+ZXPUnicode.h"
 #import "NSObject+ZXPUnicode.h"
+#import "ZPScreenAdaptation.h"
+#import "UIView+LSCore.h"
 #endif /* AllTools_h */
 
