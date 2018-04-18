@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A25F94F5A3D9BAB6A118301DFE671902'
+               BlueprintIdentifier = '35098EB8FBE5D0EB09FBF37CFAC49728'
                BlueprintName = 'TXJAllTools'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTXJAllTools.a'>

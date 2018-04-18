@@ -54,7 +54,7 @@
     return textRow;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Close[indexPath.row] = !Close[indexPath.row];
+        Close[indexPath.row] = !Close[indexPath.row];
     //一个cell刷新
     [_tab_view reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     //一个section刷新

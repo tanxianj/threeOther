@@ -130,7 +130,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     Main_TableViewCell *cell = [Main_TableViewCell SetCell];
     cell.title_lab.text = _arry_title[indexPath.row];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     
     return cell;
 }

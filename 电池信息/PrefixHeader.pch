@@ -12,6 +12,11 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 // 自定义log输出，debug时，正常NSLog输出，release状态，为空，不打印
+#ifdef DEBUG
+#define NSLog(FORMAT, ...)  fprintf(stderr,"<%s %d>:%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+#else
+#define NSLog(FORMAT, ...)  nil
+#endif
 #ifdef DEBUG // 调试时
 
 #define XJLog(...) NSLog(__VA_ARGS__)
@@ -38,6 +43,9 @@
 #import <YYText/YYText.h>
 #import <JPFPSStatus/JPFPSStatus.h>
 #import <AXAnimationChain/AXAnimationChain.h>
+#import <LLSegmentBar/LLSegmentBarVC.h>
+#import <YYModel/YYModel.h>
+#import <PGDatePicker/PGDatePickManager.h>
 //谭胖子自己的框架
 #import <TXJAllTools/AllTools.h>
 

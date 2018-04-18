@@ -23,4 +23,7 @@ platform:ios,'8.0'
 	pod 'IQKeyboardManager'
 	pod 'YYText'
 	pod 'AXAnimationChain', '~> 0.4.1'
+	pod 'LLSegmentBar'
+	pod 'YYModel'
+	pod 'PGDatePicker'
 end

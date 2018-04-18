@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 +(Main_TableViewCell *)SetCell{
     return [[[NSBundle mainBundle] loadNibNamed:@"Main_TableViewCell" owner:nil options:nil] lastObject];

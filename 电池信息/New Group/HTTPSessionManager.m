@@ -28,7 +28,8 @@
      *  请求超时的时间
      */
     manager.requestSerializer.timeoutInterval = 3.0;
-    
+    NSString *token = @"522003bf68fa268508f890771bd40e1e";
+    [manager.requestSerializer setValue:token ? token : @""     forHTTPHeaderField:@"TOKEN"];
     [manager GET:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (successBlock) {
             
