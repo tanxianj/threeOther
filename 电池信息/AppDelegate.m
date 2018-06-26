@@ -39,7 +39,6 @@
     [[JPFPSStatus sharedInstance] open];
     [JPFPSStatus sharedInstance].fpsLabel.textColor = [UIColor blueColor];
 #endif
-    DeBuGLog(@"aaa");
     return YES;
 }
 
