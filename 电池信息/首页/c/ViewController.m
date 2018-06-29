@@ -23,6 +23,7 @@
 #import "UItableViewinsets.h"
 #import "MusicViewController.h"
 #import "lianshiViewController.h"
+#import "TXJPromptViewController.h"
 
 
 
@@ -147,119 +148,142 @@
             vim_boolk.Get_lab=^(NSString *str){
 //                self.title = str.length>0?str:@"第三方相关";
             };
+            vim_boolk.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vim_boolk animated:YES];
+            
             }
             break;
     
         case 1:{
             
             Model_ViewController *model_v = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"model_v"];
+            model_v.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:model_v animated:YES];
             }
             break;
         case 2:{
             
             Tab_qk_ViewController *tab_qk = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"qk_v"];
+            tab_qk.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tab_qk animated:YES];
             }
             break;
         case 3:{
             
             SDCycleScrollViewController *sdc = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"sdc_v"];
+            sdc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:sdc animated:YES];
         }
             break;
         case 4:{
             GoBack_ViewController *goback = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"goback"];
+            goback.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:goback animated:YES];
             
         }
             break;
         case 5:{
             Storyboard_cz_ViewController *strcz = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"stcz"];
+            strcz.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:strcz animated:YES];
         }
             break;
         case 6:{
             UITableView_hegiht_ViewController *tab_height = [TXJUIStoryboard  instantiateViewControllerWithIdentifier:@"tab_height"];
+            tab_height.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tab_height animated:YES];
             
         }
             break;
         case 7:{
             Cell_zdViewController *cell_open = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"cell_zd"];
+            cell_open.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:cell_open animated:YES];
         }
             break;
         case 8:{
             Cell_showAllViewController *cellshow = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"cell_show"];
+            cellshow.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:cellshow animated:YES];
         }
             break;
         case 9:{
             YJProgressHUD_ViewController * yjhud =[TXJUIStoryboard instantiateViewControllerWithIdentifier:@"yjhud"];
+            yjhud.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:yjhud animated:YES];
         }
             break;
         case 10:{
             FirstViewController *mbjd = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"mbjd"];
+            mbjd.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:mbjd animated:YES];
         }
             break;
         case 11:{
             Pubuliu_ViewController *pubuliu = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"pubuliu"];
+            pubuliu.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:pubuliu animated:YES];
         }
             break;
         case 12:{
             ViewController *fwb = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"fwb"];
+            fwb.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:fwb animated:YES];
         }
             break;
         case 13:{
             XieyiViewController *xieyi = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"xiyi1"];
+            xieyi.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:xieyi animated:YES];
         }
             break;
         case 14:{
             WebLoadingViewController *xieyi = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"web"];
+            xieyi.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:xieyi animated:YES];
         }
             break;
         case 15:{
             View_tool_ViewController *view_tool = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"view_tool"];
+            view_tool.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:view_tool animated:YES];
         }
             break;
         case 16:{
            Super_ViewController* name = [(Super_ViewController *)[NSClassFromString(@"View_wg_test_Viewcontroller") alloc] init];
+            name.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:name animated:YES];
         }
             break;
         case 17:{
             CALayerViewController* name = [[CALayerViewController alloc] init];
+            name.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:name animated:YES];
         }
             break;
         case 18:{
             NavCollectionView* nav = [[NavCollectionView alloc] init];
+            nav.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:nav animated:YES];
         }
             break;
 //
         case 19:{
             goodsEvaluationViewController* nav = [[goodsEvaluationViewController alloc] init];
+            nav.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:nav animated:YES];
         }
             break;
         case 20:
         {
             EvaluationListViewController *EvaluationList = [[EvaluationListViewController alloc]init];
+            EvaluationList.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:EvaluationList animated:YES];
         }
             break;
         case 21:{
             RadioViewController *redio = [[RadioViewController alloc]init];
+            redio.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:redio animated:YES];
         }
             break;
@@ -269,43 +293,55 @@
             break;
         case 23:{
             RemoveListViewController *removelist = [[RemoveListViewController alloc]init];
+            removelist.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:removelist animated:YES];
         }
             break;
         case 24:{
             GoodsViewController *goods = [[GoodsViewController alloc]init];
+            goods.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:goods animated:YES];
         }
             break;
             case 25:{
                 UpimageArrayViewController *upimg = [[UpimageArrayViewController alloc]init];
+                upimg.hidesBottomBarWhenPushed = YES;
                 [self.navigationController pushViewController:upimg animated:YES];
         }
             break;
         case 26:{
             BUttonViewContorller *button = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"buttonsect"];
+            button.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:button animated:YES];
         }
             
             break;
         case 27:{
             UItableViewinsets *tab = [[UItableViewinsets alloc]init];
+            tab.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tab animated:YES];
         }
             break;
             case 28:
         {
              MusicViewController *music = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"music"];
+            music.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:music animated:YES];
         }
             break;
         case 29:
         {
             lianshiViewController *lianshi = [[lianshiViewController alloc]init];
+            lianshi.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:lianshi animated:YES];
         }
             break;
-            
+        case 30:{
+            TXJPromptViewController *vc = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"TXJPromptViewController"];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
             
         default:
             break;
@@ -314,7 +350,7 @@
 
 -(NSArray *)arry_title{
     if (!_arry_title) {
-        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放",@"链式"];
+        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放",@"链式",@"自定义提示框Block按钮点击事件"];
     }
     return _arry_title;
 }

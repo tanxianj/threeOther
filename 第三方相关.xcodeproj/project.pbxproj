@@ -122,6 +122,9 @@
 		36F3209E2016E1CC0072ACFD /* scan_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F3209C2016E1CB0072ACFD /* scan_line@2x.png */; };
 		36F320A220171BB30072ACFD /* UIImage+ImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F320A120171BB30072ACFD /* UIImage+ImageSize.m */; };
 		36F320A9201815B50072ACFD /* NavCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F320A8201815B50072ACFD /* NavCollectionView.m */; };
+		96F3E7F820E620640063C9FB /* TXJPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3E7F520E620640063C9FB /* TXJPromptView.m */; };
+		96F3E7F920E620640063C9FB /* TXJPromptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F3E7F720E620640063C9FB /* TXJPromptView.xib */; };
+		96F3E7FC20E620B80063C9FB /* TXJPromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3E7FB20E620B80063C9FB /* TXJPromptViewController.m */; };
 		A47008ADABDE8E72C28B9F01 /* libPods-第三方相关.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9771C0616ACBEDA439B0226B /* libPods-第三方相关.a */; };
 /* End PBXBuildFile section */
 
@@ -345,6 +348,11 @@
 		36F320A7201815B50072ACFD /* NavCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavCollectionView.h; sourceTree = "<group>"; };
 		36F320A8201815B50072ACFD /* NavCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavCollectionView.m; sourceTree = "<group>"; };
 		80230ED28063A53EBCCE783E /* Pods-第三方相关.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-第三方相关.release.xcconfig"; path = "Pods/Target Support Files/Pods-第三方相关/Pods-第三方相关.release.xcconfig"; sourceTree = "<group>"; };
+		96F3E7F520E620640063C9FB /* TXJPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXJPromptView.m; sourceTree = "<group>"; };
+		96F3E7F620E620640063C9FB /* TXJPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXJPromptView.h; sourceTree = "<group>"; };
+		96F3E7F720E620640063C9FB /* TXJPromptView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TXJPromptView.xib; sourceTree = "<group>"; };
+		96F3E7FA20E620B80063C9FB /* TXJPromptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXJPromptViewController.h; sourceTree = "<group>"; };
+		96F3E7FB20E620B80063C9FB /* TXJPromptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXJPromptViewController.m; sourceTree = "<group>"; };
 		975CB39559285358D0E8106C /* Pods-电池信息.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电池信息.release.xcconfig"; path = "Pods/Target Support Files/Pods-电池信息/Pods-电池信息.release.xcconfig"; sourceTree = "<group>"; };
 		9771C0616ACBEDA439B0226B /* libPods-第三方相关.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-第三方相关.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7463845B88E4A0E33F5B70 /* Pods-第三方相关.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-第三方相关.debug.xcconfig"; path = "Pods/Target Support Files/Pods-第三方相关/Pods-第三方相关.debug.xcconfig"; sourceTree = "<group>"; };
@@ -889,6 +897,7 @@
 		3649CB4A202D3817009F4C46 /* 子页面 */ = {
 			isa = PBXGroup;
 			children = (
+				96F3E7F420E620250063C9FB /* 自定义提示框Block按钮点击事件 */,
 				36E617DE205FC49400706CA9 /* 链式 */,
 				36E61741205F6B3000706CA9 /* 百度语音识别 */,
 				3650169B202C2B3100DBCBBD /* 本地音乐播放 */,
@@ -1120,6 +1129,18 @@
 			path = NavCollectionView;
 			sourceTree = "<group>";
 		};
+		96F3E7F420E620250063C9FB /* 自定义提示框Block按钮点击事件 */ = {
+			isa = PBXGroup;
+			children = (
+				96F3E7F620E620640063C9FB /* TXJPromptView.h */,
+				96F3E7F520E620640063C9FB /* TXJPromptView.m */,
+				96F3E7F720E620640063C9FB /* TXJPromptView.xib */,
+				96F3E7FA20E620B80063C9FB /* TXJPromptViewController.h */,
+				96F3E7FB20E620B80063C9FB /* TXJPromptViewController.m */,
+			);
+			path = "自定义提示框Block按钮点击事件";
+			sourceTree = "<group>";
+		};
 		F6A01875AD87250FDD24E3EF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1257,6 +1278,7 @@
 				365016A0202C3A3F00DBCBBD /* Thinking Out Loud.mp3 in Resources */,
 				36F3209D2016E1CC0072ACFD /* scan_line@3x.png in Resources */,
 				362D347A2019C2620070D2F4 /* 3.jpeg in Resources */,
+				96F3E7F920E620640063C9FB /* TXJPromptView.xib in Resources */,
 				362DE56820037C630052975C /* CYLoLi.png in Resources */,
 				046762411FCD461200FEA6B5 /* Assets.xcassets in Resources */,
 				36E1F90B201EF59F00227FA9 /* EvaluaTionCollectionViewCell.xib in Resources */,
@@ -1342,6 +1364,7 @@
 				36F18BA22062381F00D2E15E /* Calculate.m in Sources */,
 				3650169E202C2B4F00DBCBBD /* MusicViewController.m in Sources */,
 				361F5B1D2015AFA40098A3AD /* Super_ViewController.m in Sources */,
+				96F3E7FC20E620B80063C9FB /* TXJPromptViewController.m in Sources */,
 				0461937F1FD51BBC0074B19F /* Storyboard_cz_ViewController.m in Sources */,
 				04A5C5D31FD12FC300CDF939 /* tab_qk_TableViewCell.m in Sources */,
 				360D2E0E202068940061A4ED /* RadioViewController.m in Sources */,
@@ -1363,6 +1386,7 @@
 				369F4CBA20297C3700CA7A89 /* UpimageArrayViewController.m in Sources */,
 				36F18B9F2062380A00D2E15E /* lanshitestViewController.m in Sources */,
 				046762471FCD461200FEA6B5 /* main.m in Sources */,
+				96F3E7F820E620640063C9FB /* TXJPromptView.m in Sources */,
 				36F18B9720622AA500D2E15E /* HomeTwoViewController.m in Sources */,
 				369F4CA52028264000CA7A89 /* GoodsViewController.m in Sources */,
 				36E1F8F6201EC0A500227FA9 /* UIView+Screenshot.m in Sources */,
