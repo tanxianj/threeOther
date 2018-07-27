@@ -46,6 +46,7 @@
 #import <LLSegmentBar/LLSegmentBarVC.h>
 #import <YYModel/YYModel.h>
 #import <PGDatePicker/PGDatePickManager.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 //谭胖子自己的框架
 #import <TXJAllTools/AllTools.h>
 

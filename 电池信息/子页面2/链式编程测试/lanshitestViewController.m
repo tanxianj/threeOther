@@ -1,6 +1,6 @@
 //
 //  lanshitestViewController.m
-//  第三方相关
+//  
 //
 //  Created by bang on 2018/3/21.
 //  Copyright © 2018年 MAc. All rights reserved.
@@ -10,6 +10,7 @@
 #import "Calculate.h"
 #import "UIviewLs.h"
 #import "TXJView.h"
+#import "UIView+XJLoadingView.h"
 @interface lanshitestViewController ()
 
 @end
@@ -21,7 +22,7 @@
     // Do any additional setup after loading the view.
 //    Calculate *cal = [[Calculate alloc]init];
 //    cal.add(2).add(5).printResult.by(3).printResult;
-    
+    /*
     [Calculate markCalculate:^(Calculate *make) {
         make
         .add(5)
@@ -59,8 +60,31 @@
 //        make.left.right.equalTo(self.view);
 //        make.top.equalTo(self.view).offset(10);
 //    }];
-   
+     */
+    __weak typeof(self) weakSelf = self;
+    self.view.xj_loadingView = [XJLoadingView loadingWithrefreshingBlock:^{
+        DeBuGLog(@"显示了我的指示器");
+        [weakSelf XJ_LoadIngtest];
+    }];
+     [self XJ_LoadIngtest];
+    [self.view.xj_loadingView beginRefreshing];
     
+    
+}
+-(void)XJ_LoadIngtest{
+    [self.view.xj_loadingView beginRefreshing];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSInteger number = arc4random() % 100;
+        DeBuGLog(@"number is %li",(long)number);
+        if (number < 40) {
+            [self.view.xj_loadingView endRefreshing];
+        }else if (number >40 && number< 80){
+            [self.view.xj_loadingView endRefreshingWithErrorString:@"大于40 小于80"];
+        }else{
+            [self.view.xj_loadingView endRefreshingWithNoDataString:@"大于80"];
+        }
+        
+    });
 }
 -(void)SetNavOther{
     self.title = @"链式测试";

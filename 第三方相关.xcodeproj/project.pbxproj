@@ -122,6 +122,11 @@
 		36F3209E2016E1CC0072ACFD /* scan_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F3209C2016E1CB0072ACFD /* scan_line@2x.png */; };
 		36F320A220171BB30072ACFD /* UIImage+ImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F320A120171BB30072ACFD /* UIImage+ImageSize.m */; };
 		36F320A9201815B50072ACFD /* NavCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F320A8201815B50072ACFD /* NavCollectionView.m */; };
+		9642E43120EA003400D14A93 /* RacOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642E43020EA003400D14A93 /* RacOneViewController.m */; };
+		9642E43420EA004500D14A93 /* RacTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642E43320EA004500D14A93 /* RacTwoViewController.m */; };
+		96774E7F20EF0C980079A934 /* UIView+XJLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96774E7E20EF0C980079A934 /* UIView+XJLoadingView.m */; };
+		96774E8620EF6C270079A934 /* RunTimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96774E8520EF6C270079A934 /* RunTimeTestViewController.m */; };
+		96EC5AFB20EB7F84007A72C7 /* MainTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5AFA20EB7F84007A72C7 /* MainTwo.storyboard */; };
 		96F3E7F820E620640063C9FB /* TXJPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3E7F520E620640063C9FB /* TXJPromptView.m */; };
 		96F3E7F920E620640063C9FB /* TXJPromptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F3E7F720E620640063C9FB /* TXJPromptView.xib */; };
 		96F3E7FC20E620B80063C9FB /* TXJPromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F3E7FB20E620B80063C9FB /* TXJPromptViewController.m */; };
@@ -348,6 +353,15 @@
 		36F320A7201815B50072ACFD /* NavCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavCollectionView.h; sourceTree = "<group>"; };
 		36F320A8201815B50072ACFD /* NavCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavCollectionView.m; sourceTree = "<group>"; };
 		80230ED28063A53EBCCE783E /* Pods-第三方相关.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-第三方相关.release.xcconfig"; path = "Pods/Target Support Files/Pods-第三方相关/Pods-第三方相关.release.xcconfig"; sourceTree = "<group>"; };
+		9642E42F20EA003400D14A93 /* RacOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacOneViewController.h; sourceTree = "<group>"; };
+		9642E43020EA003400D14A93 /* RacOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacOneViewController.m; sourceTree = "<group>"; };
+		9642E43220EA004500D14A93 /* RacTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacTwoViewController.h; sourceTree = "<group>"; };
+		9642E43320EA004500D14A93 /* RacTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacTwoViewController.m; sourceTree = "<group>"; };
+		96774E7D20EF0C980079A934 /* UIView+XJLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XJLoadingView.h"; sourceTree = "<group>"; };
+		96774E7E20EF0C980079A934 /* UIView+XJLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XJLoadingView.m"; sourceTree = "<group>"; };
+		96774E8420EF6C270079A934 /* RunTimeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeTestViewController.h; sourceTree = "<group>"; };
+		96774E8520EF6C270079A934 /* RunTimeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeTestViewController.m; sourceTree = "<group>"; };
+		96EC5AFA20EB7F84007A72C7 /* MainTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTwo.storyboard; sourceTree = "<group>"; };
 		96F3E7F520E620640063C9FB /* TXJPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXJPromptView.m; sourceTree = "<group>"; };
 		96F3E7F620E620640063C9FB /* TXJPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXJPromptView.h; sourceTree = "<group>"; };
 		96F3E7F720E620640063C9FB /* TXJPromptView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TXJPromptView.xib; sourceTree = "<group>"; };
@@ -529,7 +543,6 @@
 				3649CB4A202D3817009F4C46 /* 子页面 */,
 				362D3441201861960070D2F4 /* Tool */,
 				361F5ABC2015795C0098A3AD /* View重写 */,
-				366C27D020245A6B00925B49 /* ZXPUnicode */,
 				36841F2B20243FCF00874413 /* New Group */,
 				046762371FCD461200FEA6B5 /* AppDelegate.h */,
 				046762381FCD461200FEA6B5 /* AppDelegate.m */,
@@ -897,6 +910,7 @@
 		3649CB4A202D3817009F4C46 /* 子页面 */ = {
 			isa = PBXGroup;
 			children = (
+				9642E42E20E9FFF700D14A93 /* RAC测试 */,
 				96F3E7F420E620250063C9FB /* 自定义提示框Block按钮点击事件 */,
 				36E617DE205FC49400706CA9 /* 链式 */,
 				36E61741205F6B3000706CA9 /* 百度语音识别 */,
@@ -963,13 +977,6 @@
 				36501698202C2B2800DBCBBD /* shake_start.mp3 */,
 			);
 			path = "本地音乐播放";
-			sourceTree = "<group>";
-		};
-		366C27D020245A6B00925B49 /* ZXPUnicode */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ZXPUnicode;
 			sourceTree = "<group>";
 		};
 		36841F2B20243FCF00874413 /* New Group */ = {
@@ -1069,6 +1076,7 @@
 			children = (
 				36F18B9520622AA500D2E15E /* HomeTwoViewController.h */,
 				36F18B9620622AA500D2E15E /* HomeTwoViewController.m */,
+				96EC5AFA20EB7F84007A72C7 /* MainTwo.storyboard */,
 			);
 			path = "首页2";
 			sourceTree = "<group>";
@@ -1076,6 +1084,8 @@
 		36F18B9420622A8200D2E15E /* 子页面2 */ = {
 			isa = PBXGroup;
 			children = (
+				96774E8320EF6BEB0079A934 /* 运行时测试 */,
+				96774E7320EF0B570079A934 /* UIActivityIndicatorView(缺省页) */,
 				3634EC2220639540000DDE1A /* YYModel */,
 				36F18B9C206237EC00D2E15E /* 链式编程测试 */,
 				36F18B9820622C7700D2E15E /* 分段控制 */,
@@ -1127,6 +1137,35 @@
 				36F320A8201815B50072ACFD /* NavCollectionView.m */,
 			);
 			path = NavCollectionView;
+			sourceTree = "<group>";
+		};
+		9642E42E20E9FFF700D14A93 /* RAC测试 */ = {
+			isa = PBXGroup;
+			children = (
+				9642E42F20EA003400D14A93 /* RacOneViewController.h */,
+				9642E43020EA003400D14A93 /* RacOneViewController.m */,
+				9642E43220EA004500D14A93 /* RacTwoViewController.h */,
+				9642E43320EA004500D14A93 /* RacTwoViewController.m */,
+			);
+			path = "RAC测试";
+			sourceTree = "<group>";
+		};
+		96774E7320EF0B570079A934 /* UIActivityIndicatorView(缺省页) */ = {
+			isa = PBXGroup;
+			children = (
+				96774E7D20EF0C980079A934 /* UIView+XJLoadingView.h */,
+				96774E7E20EF0C980079A934 /* UIView+XJLoadingView.m */,
+			);
+			path = "UIActivityIndicatorView(缺省页)";
+			sourceTree = "<group>";
+		};
+		96774E8320EF6BEB0079A934 /* 运行时测试 */ = {
+			isa = PBXGroup;
+			children = (
+				96774E8420EF6C270079A934 /* RunTimeTestViewController.h */,
+				96774E8520EF6C270079A934 /* RunTimeTestViewController.m */,
+			);
+			path = "运行时测试";
 			sourceTree = "<group>";
 		};
 		96F3E7F420E620250063C9FB /* 自定义提示框Block按钮点击事件 */ = {
@@ -1286,6 +1325,7 @@
 				362D347C2019C2620070D2F4 /* 5.jpeg in Resources */,
 				362D34792019C2620070D2F4 /* 1.jpeg in Resources */,
 				3650169A202C2B2800DBCBBD /* shake_start.mp3 in Resources */,
+				96EC5AFB20EB7F84007A72C7 /* MainTwo.storyboard in Resources */,
 				0467623F1FCD461200FEA6B5 /* Main.storyboard in Resources */,
 				36501699202C2B2800DBCBBD /* shake_end.mp3 in Resources */,
 				04A5C5C41FD0FE5100CDF939 /* Model_TableViewCell.xib in Resources */,
@@ -1360,6 +1400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96774E7F20EF0C980079A934 /* UIView+XJLoadingView.m in Sources */,
 				3649CB50202D3EC0009F4C46 /* UIView+LSCore.m in Sources */,
 				36F18BA22062381F00D2E15E /* Calculate.m in Sources */,
 				3650169E202C2B4F00DBCBBD /* MusicViewController.m in Sources */,
@@ -1372,6 +1413,7 @@
 				3649CB53202D4297009F4C46 /* GrabRedTableView.m in Sources */,
 				36F18BA92062431600D2E15E /* TXJView.m in Sources */,
 				0431B66A1FD7892900007426 /* Pubuliu_CollectionViewCell.m in Sources */,
+				9642E43120EA003400D14A93 /* RacOneViewController.m in Sources */,
 				369F4CAF202951BE00CA7A89 /* UIImageView+LoadImage.m in Sources */,
 				3634EC252063955F000DDE1A /* YYModelViewController.m in Sources */,
 				0467623C1FCD461200FEA6B5 /* ViewController.m in Sources */,
@@ -1408,6 +1450,7 @@
 				04E099021FD64C3000DAF04A /* YJProgressHUD_ViewController.m in Sources */,
 				362D344C20186AC70070D2F4 /* payCell.m in Sources */,
 				046193821FD51C7B0074B19F /* Storyboard_cz2_ViewController.m in Sources */,
+				96774E8620EF6C270079A934 /* RunTimeTestViewController.m in Sources */,
 				0431B65C1FD685DD00007426 /* FirstViewController.m in Sources */,
 				04A5C5CD1FD12E7700CDF939 /* Tab_qk_ViewController.m in Sources */,
 				36F320962016D9E60072ACFD /* CALayerViewController.m in Sources */,
@@ -1420,6 +1463,7 @@
 				361F5B212015C1A40098A3AD /* View_wg_test_Viewcontroller.m in Sources */,
 				36CEE9F3200DC9D1009DACC0 /* UIWindow+Motion.m in Sources */,
 				04A5C5B81FD0EAE300CDF939 /* ViewController_boolk.m in Sources */,
+				9642E43420EA004500D14A93 /* RacTwoViewController.m in Sources */,
 				36CEE9FA200EE370009DACC0 /* Xieyi2ViewController.m in Sources */,
 				362DE56920037C630052975C /* TableViewCellfwb.m in Sources */,
 				04A5C5D81FD145FA00CDF939 /* Main_TableViewCell.m in Sources */,

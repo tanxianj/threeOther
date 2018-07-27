@@ -21,6 +21,7 @@
     // Override point for customization after application launch.
     [UIButton appearance].adjustsImageWhenDisabled = NO;
     [UIButton appearance].adjustsImageWhenHighlighted = NO;
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
     IQKeyboardManager *manager          = [IQKeyboardManager sharedManager];
     manager.enable                      = YES;
     manager.shouldResignOnTouchOutside  = YES;

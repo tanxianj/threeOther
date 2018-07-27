@@ -24,6 +24,7 @@
 #import "MusicViewController.h"
 #import "lianshiViewController.h"
 #import "TXJPromptViewController.h"
+#import "RacOneViewController.h"
 
 
 
@@ -342,7 +343,14 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+//            RacOneViewController
+        case 31:{
+            RacOneViewController *vc = [TXJUIStoryboard instantiateViewControllerWithIdentifier:@"RacOneViewController"];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             
+            break;
         default:
             break;
     }
@@ -350,7 +358,7 @@
 
 -(NSArray *)arry_title{
     if (!_arry_title) {
-        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放",@"链式",@"自定义提示框Block按钮点击事件"];
+        _arry_title = @[@"Block回调",@"Model-Table",@"表格滑动被清空",@"SDCycleScrollView",@"自定义返回-保留系统返回手势",@"Storyboard传值",@"UITableView自适应高度",@"cell折叠",@"cell点击展示更多",@"YJProgressHUD",@"MBProgressHUD+JDragon",@"瀑布流",@"富文本",@"协议回传==Block",@"网页加载进度",@"ViewController工具类",@"网格",@"CALayer_Test",@"NavCollectionView",@"商品评价",@"评价列表",@"部分圆角",@"空",@"列表删除",@"商品增删",@"多图上传测试",@"按钮状态",@"表格偏移",@"本地音乐播放",@"链式",@"自定义提示框Block按钮点击事件",@"RAC",];
     }
     return _arry_title;
 }

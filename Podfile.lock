@@ -37,6 +37,7 @@ PODS:
   - PGDatePicker (2.2.0):
     - PGPickerView
   - PGPickerView (1.2.6)
+  - ReactiveObjC (3.1.0)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.2.3):
@@ -62,6 +63,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.12)
   - MLTransition (~> 2.1.3)
   - PGDatePicker
+  - ReactiveObjC (~> 3.1.0)
   - SDCycleScrollView (~> 1.73)
   - TXJAllTools
   - TZImagePickerController (~> 1.9.3)
@@ -87,6 +89,7 @@ SPEC REPOS:
     - MLTransition
     - PGDatePicker
     - PGPickerView
+    - ReactiveObjC
     - SDCycleScrollView
     - SDWebImage
     - TZImagePickerController
@@ -113,6 +116,7 @@ SPEC CHECKSUMS:
   MLTransition: 8ebe393aedfb61507202085a5bb16c7b17363e43
   PGDatePicker: 8d9e34967b7f9be0c7d73afb370dc18b37a20758
   PGPickerView: 8fbbf63d0404065a43a495a0115d339455e0f819
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   TXJAllTools: 685fe828575757d59004f33c3fe778d2c6cb4aaf
@@ -120,6 +124,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 5b536f290e9fb2a294f1469cc4b1e515ea3595ab
+PODFILE CHECKSUM: 54b926ad807998994928a9bd399b6f6b74b83a31
 
 COCOAPODS: 1.5.0

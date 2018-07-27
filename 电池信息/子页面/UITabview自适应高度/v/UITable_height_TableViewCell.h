@@ -1,6 +1,6 @@
 //
 //  UITable_height_TableViewCell.h
-//  第三方相关
+//  
 //
 //  Created by MAc on 2017/12/4.
 //  Copyright © 2017年 MAc. All rights reserved.
