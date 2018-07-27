@@ -96,7 +96,11 @@
     CellList[i] = !CellList[i];
     //刷新列表
     NSIndexSet * index = [NSIndexSet indexSetWithIndex:i];
-    [_tab_view reloadSections:index withRowAnimation:UITableViewRowAnimationAutomatic];
+    __weak typeof(self) weakSelf = self;
+    [UIView performWithoutAnimation:^{
+        [weakSelf.tab_view reloadSections:index withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
