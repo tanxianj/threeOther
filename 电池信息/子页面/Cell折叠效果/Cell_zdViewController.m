@@ -92,9 +92,9 @@
         [_tab_view reloadData];
     }
      */
-    //取反
+    //取反ww
     CellList[i] = !CellList[i];
-    //刷新列表
+    //刷新列表w
     NSIndexSet * index = [NSIndexSet indexSetWithIndex:i];
     __weak typeof(self) weakSelf = self;
     [UIView performWithoutAnimation:^{
