@@ -1,1 +1,1 @@
-../../../TXJAllTools/TXJAllTools/Classes/UIView+LSCore.h
+../../../TXJAllTools/TXJAllTools/Classes/UIVIew/UIView+LSCore.h

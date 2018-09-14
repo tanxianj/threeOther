@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^ButtnBlock) (void);
-@interface Button : UIButton
+@interface TXJButton : UIButton
 @property(nonatomic,copy) ButtnBlock buttonblock;
 @end

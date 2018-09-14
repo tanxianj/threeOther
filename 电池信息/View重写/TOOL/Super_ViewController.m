@@ -91,6 +91,7 @@
 -(void)AddBackBtn{
     self.navigationItem.leftBarButtonItem = [self setupNavigationItemWithLeft:Nav_Left_Item imageName:@"return" title:nil callBack:nil];
 }
+/*
 - (UIBarButtonItem *)setupNavigationItemWithLeft:(LeftOrRihgt) leftOrRight
                                        imageName:(NSString *)imageName
                                            title:(NSString *)title
@@ -175,6 +176,7 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
+ */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

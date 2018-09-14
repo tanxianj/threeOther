@@ -1,0 +1,1 @@
+../../../TXJAllTools/TXJAllTools/Classes/UITabBar/UITabBar+badge.h

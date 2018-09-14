@@ -1,1 +1,1 @@
-../../../TXJAllTools/TXJAllTools/Classes/UILabel+NewLab.h
+../../../TXJAllTools/TXJAllTools/Classes/UILabel/UILabel+NewLab.h

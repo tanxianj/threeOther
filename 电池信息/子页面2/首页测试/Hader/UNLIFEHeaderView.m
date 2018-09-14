@@ -1,14 +1,14 @@
 //
-//  UIButton.m
-//  
+//  UNLIFEHeaderView.m
+//  第三方相关
 //
-//  Created by bang on 2018/1/22.
+//  Created by 谭显敬 on 2018/8/22.
 //  Copyright © 2018年 MAc. All rights reserved.
 //
 
-#import "Button.h"
+#import "UNLIFEHeaderView.h"
 
-@implementation Button
+@implementation UNLIFEHeaderView
 
 /*
 // Only override drawRect: if you perform custom drawing.

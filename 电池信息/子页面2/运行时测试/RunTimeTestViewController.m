@@ -11,6 +11,8 @@ const void*RunTimeKey = @"THISISTEST";
 @interface RunTimeTestViewController ()
 typedef void (^BlockRunTime)(NSString *str);
 @property (weak, nonatomic) IBOutlet UIButton *runTimeBtn;
+@property (weak, nonatomic) IBOutlet UIView *viewtest;
+@property (weak, nonatomic) IBOutlet UIImageView *vimgV;
 @property (nonatomic,copy)BlockRunTime block;
 @end
 
@@ -19,11 +21,25 @@ typedef void (^BlockRunTime)(NSString *str);
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [_viewtest addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTest)]];
+
 }
 -(void)SetNavOther{
-    self.title = @"运行时测试";
+    self.title = @"测试";//运行时
     [self AddBackBtn];
+}
+-(void)viewTest{
+    UIViewAnimationOptions option = UIViewAnimationOptionTransitionFlipFromLeft;
+    
+    [UIView transitionWithView:self.viewtest  duration:1.5f options:option animations:^{
+
+        
+        if ([self.vimgV.image isEqual:[UIImage imageNamed:@"2.jpeg"]]) {
+            self.vimgV.image = [UIImage imageNamed:@"1.jpeg"];
+        }else{
+            self.vimgV.image = [UIImage imageNamed:@"2.jpeg"];
+        }
+    } completion:nil];
 }
 - (IBAction)RunTimeBtnAction:(UIButton *)btn {
     [self.runTimeBtn setTitle:[NSString stringWithFormat:@"%u",arc4random()%100] forState:UIControlStateNormal];

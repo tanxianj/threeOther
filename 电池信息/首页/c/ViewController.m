@@ -73,7 +73,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"第三方相关";
+    self.title = @"测试合集";
+    self.tabBarItem.badgeValue = @"10";
     self.tab_view.tableFooterView = [UIView new];
     [self updateTimer];
     /* 延迟方式二

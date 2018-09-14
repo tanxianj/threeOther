@@ -43,7 +43,7 @@ PODS:
   - SDWebImage (4.2.3):
     - SDWebImage/Core (= 4.2.3)
   - SDWebImage/Core (4.2.3)
-  - TXJAllTools (0.1.38)
+  - TXJAllTools (0.1.44)
   - TZImagePickerController (1.9.8)
   - YYModel (1.0.4)
   - YYText (1.0.7)
@@ -119,7 +119,7 @@ SPEC CHECKSUMS:
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
-  TXJAllTools: 685fe828575757d59004f33c3fe778d2c6cb4aaf
+  TXJAllTools: 54af7c68cac5a8f72e8fb1604a459bd977ff5980
   TZImagePickerController: 3b9413ae5d049b1fdc5b0c720ad283f35b679a50
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849

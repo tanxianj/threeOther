@@ -8,7 +8,7 @@
 #import "ZJImageMagnification.h"
 #define  Width [UIScreen mainScreen].bounds.size.width
 #define  Height [UIScreen mainScreen].bounds.size.height
-@interface ZJImageMagnification()
+@interface ZJImageMagnification()//<UIScrollViewDelegate>
 //@property (nonatomic ,assign)NSInteger topheight;
 @end
 @implementation ZJImageMagnification
@@ -78,15 +78,21 @@ static UIScrollView *scrolView;
     scrolView.showsVerticalScrollIndicator = NO;
     scrolView.showsHorizontalScrollIndicator = NO;
     scrolView.pagingEnabled = YES;
-    
+    scrolView.bounces = NO;
     [scrolView setBackgroundColor:[UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:alpha]];
     [scrolView setAlpha:0];
-    
     [bgView addSubview:scrolView];
     
-    UILabel *numberlab = [UILabel LableInitWith:@"1/5" LabFontSize:14.0 textColor:[UIColor whiteColor] textAlignment:NSTextAlignmentCenter];
-    numberlab.frame = CGRectMake(0, 0, Width, 40);
-    [bgView addSubview:numberlab];
+//    UILabel *numberlab = [[UILabel alloc]init];
+//    numberlab.text = @"1/5";
+//    numberlab.font = [UIFont systemFontOfSize:14.0];
+//    numberlab.textColor = [UIColor whiteColor];
+//    numberlab.textAlignment = NSTextAlignmentCenter;
+//
+//
+//    numberlab.frame = CGRectMake(0, 0, Width, 40);
+//    [bgView addSubview:numberlab];
+    
     for (int i = 0; i< imgArray.count; i++) {
         
         NSString *str = [NSString stringWithFormat:@"%@",imgArray[i]];
@@ -126,8 +132,6 @@ static UIScrollView *scrolView;
     }
     scrolView.contentOffset = CGPointMake(integer*Width, 0);
     
-//    XJLog(@"integer*Width is %f ",integer*Width);
-    
 }
 
 // 完成拖拽(滚动停止时调用此方法，手指离开屏幕前)
@@ -135,8 +139,8 @@ static UIScrollView *scrolView;
 
 
 -(void)scrollViewDidScroll:(UIScrollView*)scrollView{
-    XJLog(@"%f",scrollView.contentOffset.x);
-    
+//    XJLog(@"%f",scrollView.contentOffset.x);
+
 }
 /**
  *  恢复imageView原始尺寸

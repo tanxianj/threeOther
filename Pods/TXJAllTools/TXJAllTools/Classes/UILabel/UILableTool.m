@@ -1,3 +1,4 @@
+
 //
 //  UILable_Tool.m
 //  TXJAllTools
@@ -19,4 +20,5 @@
     
     return size.height;
 }
+
 @end

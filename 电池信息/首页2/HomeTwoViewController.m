@@ -211,12 +211,14 @@
                         @{@"title":@"链式编程测试",@"Controller":@"lanshitestViewController",@"isStoryboard":@"NO"},
                         @{@"title":@"YYModel",@"Controller":@"YYModelViewController",@"isStoryboard":@"NO"},
                         
+                        @{@"title":@"UNLIFE首页测试",@"Controller":@"UNLIFEHomeViewController",@"isStoryboard":@"NO"},
 //                        @{@"title":@"",@"Controller":@"",@"isStoryboard":@"NO"},
                         
                         //Storyboard 页面
                         
 //                        @{@"title":@"",@"Controller":@"",@"isStoryboard":@"YES",@"StoryboardName":@"MainTwo"},
   @{@"title":@"运行时测试",@"Controller":@"RunTimeTestViewController",@"isStoryboard":@"YES",@"StoryboardName":@"MainTwo"},
+  @{@"title":@"系统自带字体",@"Controller":@"familyNamesViewController",@"isStoryboard":@"YES",@"StoryboardName":@"MainTwo"},
                         ];
     }
     return _arrayTitle;

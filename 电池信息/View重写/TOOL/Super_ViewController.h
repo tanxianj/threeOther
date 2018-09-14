@@ -20,9 +20,11 @@ typedef NS_ENUM(NSUInteger,LeftOrRihgt) {
 -(BOOL)HiddenNavView;
 -(void)AddBackBtn;
 -(void)SetNavOther;
+/*
 - (UIBarButtonItem *)setupNavigationItemWithLeft:(LeftOrRihgt) leftOrRight
                                        imageName:(NSString *)imageName
                                            title:(NSString *)title
                                         callBack:(ButtnBlock)buttonBlock;
+ */
 @end
 

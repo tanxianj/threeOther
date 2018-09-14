@@ -1,1 +1,1 @@
-../../../TXJAllTools/TXJAllTools/Classes/UIColor+Hex.h
+../../../TXJAllTools/TXJAllTools/Classes/UIColor/UIColor+Hex.h

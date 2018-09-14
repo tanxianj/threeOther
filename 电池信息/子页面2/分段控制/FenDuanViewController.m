@@ -20,13 +20,16 @@
     // Do any additional setup after loading the view.
     // 1 设置segmentBar的frame
     self.segmentVC = [[LLSegmentBarVC alloc]init];
-    self.segmentVC.segmentBar.frame = CGRectMake(0, 0, __kWidth, 45);
-    self.segmentVC.segmentBar.backgroundColor = [UIColor redColor];
+    self.segmentVC.segmentBar.frame = CGRectMake(__kWidth/2, 0, __kWidth/2, 45);
+//    self.segmentVC.segmentBar.backgroundColor = [UIColor redColor];
     
 //    self.navigationItem.titleView = self.segmentVC.segmentBar;
+    
     // 2 添加控制器的V
-    self.segmentVC.view.frame = self.view.bounds;
+    self.segmentVC.view.frame = CGRectMake(0, 45, __kWidth, __kHeight-45);
     [self.view addSubview:self.segmentVC.view];
+    
+    [self.view addSubview:self.segmentVC.segmentBar];
     // 3 添加控制器数组和标题数组
     NSArray *items = @[@"页面一", @"页面二", @"页面三"];
     UIViewController *vc1 = [UIViewController new];
@@ -39,7 +42,7 @@
     
     // 5  配置基本设置  采用链式编程模式进行设置
     [self.segmentVC.segmentBar updateWithConfig:^(LLSegmentBarConfig *config) {
-        config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor redColor]).indicatorColor([UIColor redColor]).indicatorHeight(2);
+        config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor yellowColor]).indicatorColor([UIColor redColor]).indicatorHeight(2);
     }];
    
 }

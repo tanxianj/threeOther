@@ -1,1 +1,1 @@
-../../../TXJAllTools/TXJAllTools/Classes/UILableTool.h
+../../../TXJAllTools/TXJAllTools/Classes/UILabel/UILableTool.h
